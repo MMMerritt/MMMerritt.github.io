@@ -2,13 +2,106 @@
 <html>
 
     <head>
-      <title>Michelle Merritt - Portfolio</title>
+      <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+      <title>Michelle Merritt - Portfolio</title>
+      <link rel="stylesheet" type="text/css" href="styles/landing.css">
       <link rel="stylesheet" type="text/css" href="styles/main.css">
+      <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     </head>
 
-    <body>
+    <body class="landing">
+
+      <nav class="navbar">
+
+
+        <img src="images/logo-icon.png" alt="MM" class="icon">
+        <img src="images/mm-logo.png" alt="Michelle Merritt" class="full-logo">
+
+        <a href="#!" class="menu-btn" id="menu-btn">
+           <i class="fas fa-bars"></i>
+        </a>
+
+        <div class="navbar-links">
+             <a href="#work" class="top-link">WORK</a>
+             <a href="#about" class="top-link">ABOUT</a>
+             <a href="#contact" class="top-link">CONTACT</a>
+        </div>
+
+        <!--<div class="mobile-nav">-->
+
+
+         <div class="responsive-menu" id="responsive-menu">
+            <ul>
+               <li><a href="#work">WORK</a></li>
+               <li><a href="#about">ABOUT</a></li>
+               <li><a href="#contact">CONTACT</a></li>
+            </ul>
+         </div>
+
+        <!--</div>-->
+
+      </nav>
+
+      <div class="container" id="container">
+
+        <section class="hero-content">
+
+          <div class="intro">
+            <h3>Hi! I’m</h3>
+            <h1>Michelle</h1>
+            <h1>Merritt</h1>
+            <h3>an Austin-based</h3>
+            <h3>UX/UI Designer.</h3>
+            <p>I combine a thorough design process with empathy for the user
+              to create engaging and intuitive digital experiences.</p>
+          </div>
+
+        </section>
+
+        <!--<section class="projects">-->
+          <div class="project-1">
+            <a href="brio-coffee.html"> <!--Fix link!-->
+                <img src="images/brio-case-study.png" alt="Brio Coffee" class="case-study brio">
+            </a>
+            <div class="case-study-specs">
+              <h2>Brio Coffee</h2>
+              <p>Research | Branding | Site Design + Development</p>
+            </div>
+          </div>
+
+          <div class="project-2">
+            <a href="nomadic-noms.html"> <!--Fix link!-->
+                <img src="images/nomadic-noms-case-study.png" alt="Nomadic Noms" class="case-study noms">
+            </a>
+            <div class="case-study-specs">
+              <h2>Nomadic Noms</h2>
+              <p>Research | Branding | Mobile App Design</p>
+            </div>
+          </div>
+
+        <!--</section>-->
+
+      </div>
+
+      <footer>
+
+          <div class="social-links">
+              <a href="default.asp">
+                  <img src="images/instagram-icon.png" alt="Instagram" class="social-media">
+              </a>
+              <a href="default.asp">
+                  <img src="images/linkedin-icon.png" alt="Linked In" class="social-media">
+              </a>
+          </div>
+
+          <div class="copyright">
+              <p>Designed and developed by Michelle Merritt © Copyright 2018</p>
+          </div>
+
+      </footer>
 
     </body>
 
