@@ -14,7 +14,7 @@ h1 {
 h2 {
     color: #757575;
     font-family: 'Open Sans Condensed', 'Arial', 'Helvetica', sans-serif;
-    font-size: 4.8rem;
+    font-size: 3.6rem;
     font-weight: 300;
 }
 
@@ -69,7 +69,6 @@ a {
 }
 
 .hero-content p {
-    font-size: 2rem;
     padding-bottom: 3rem;
 }
 
@@ -79,24 +78,6 @@ a {
     margin: 3rem;
     padding: .8rem 1.5rem;
 }
-
-/*.project-specs {
-    grid-column: 1 / 7;
-    grid-row: 3 / 4;
-    align-self: center;
-    justify-self: center;
-    padding: 5rem 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 30rem);
-}
-
-.project-specs h4 {
-    margin: 3.2rem 0 1.6rem 0;
-}
-
-.project-specs p {
-    margin: .8rem 0;
-}*/
 
 .column-left {
     grid-column: 1 / 7;
@@ -114,6 +95,7 @@ a {
 }
 
 .column-left, .column-mid, .column-right {
+    align-self: center;
     justify-self: center;
     max-width: 100%;
     padding: 3rem 1rem;
@@ -134,70 +116,115 @@ a {
     justify-self: center;
     max-width: 69.6rem;
     padding: 5rem 1.6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.overview h2 {
-    display: inline;
+.illustration-beans {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: center;
+    max-width: 9rem;
+    height: auto;
+    padding: 10rem 1rem 1rem 1rem;
+}
+
+.challenge {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    align-self: center;
+    justify-self: center;
     max-width: 21rem;
     padding: 0 2rem 2rem 2rem;
     text-align: center;
 }
 
-.illustration-beans {
-    max-width: 9rem;
-    height: auto;
-    padding: 0 1rem 0 12rem;
+.challenge-text {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    align-self: center;
+    justify-self: center;
 }
 
 .illustration-mug {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    align-self: center;
+    justify-self: center;
     max-width: 7.7rem;
     height: auto;
-    padding: 7rem 1rem 0 5rem;
+    padding: 10rem 1rem 1rem 1rem;
+}
+
+.solution {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    align-self: center;
+    justify-self: center;
+}
+
+.solution-text {
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
+    align-self: center;
+    justify-self: center;
 }
 
 .discovery {
     grid-column: 1 / 7;
     grid-row: 7 / 8;
-    padding: 5rem 1.6rem;
+    padding: 10rem 1.6rem 5rem 1.6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .discovery-intro {
     grid-column: 1 / 3;
+    grid-row: 2 / 3;
     align-self: center;
     justify-self: center;
-    padding:
-}
-
-.discovery-intro h2 {
     text-align: center;
 }
 
+.illustration-discover {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.discovery-text {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    justify-self: center;
+}
+
 .company {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
     justify-self: center;
     padding: 3rem;
 }
 
 .products {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
     justify-self: center;
     padding: 3rem;
 }
 
 .audience {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    grid-row: 6 / 7;
     justify-self: center;
     padding: 3rem;
 }
 
 .competitors {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    grid-row: 7 / 8;
     justify-self: center;
     padding: 3rem;
 }
@@ -217,71 +244,401 @@ a {
     align-self: center;
     justify-self: center;
     max-width: 95rem;
-    padding: 5rem 0;
+    padding: 1rem;
+    background-color: #F9F9F9;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 h3.statement {
     font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
-    font-size: 3.6rem;
-    max-width: 70rem;
     padding: 0 0 4rem 0;
     text-align: center;
 }
 
 .brand-outline {
     border: .3rem solid #9857AD;
-    padding: 2.5rem 6rem 5rem 6rem;
+    padding: 2.5rem 2rem 5rem 2rem;
 }
 
-.branding {
+.branding-title {
+    font-size: 3.6rem;
     grid-column: 1 / 7;
     grid-row: 9 / 10;
     align-self: center;
     justify-self: center;
-    padding: 5rem 1.6rem;
+    padding-top: 11rem;
+    text-align: center;
 }
 
-.brand-personality, .caffeine-words, .coffee-words, .coffee-mindmap,
-  .logo-sketches, .logo-graphics, .bag-sketch {
-    display: inline;
-    max-width: 40rem;
-    height: auto;
+.brand-personality {
+    grid-column: 1 / 7;
+    grid-row: 10 / 11;
+    align-self: center;
+    justify-self: center;
+    margin: 1rem 0;
+    max-width: 100%;
 }
 
-.final-logo-color, .final-logo-bw {
-    padding: .5rem;
+.caffeine-words {
+    grid-column: 1 / 7;
+    grid-row: 11 / 12;
+    align-self: center;
+    justify-self: center;
+    margin: 1rem 0;
+    max-width: 100%;
+}
+
+.coffee-words {
+    grid-column: 1 / 7;
+    grid-row: 12 / 13;
+    align-self: center;
+    justify-self: center;
+    margin: 1rem 0;
+    max-width: 100%;
+}
+
+.mind-maps {
+    display: none;
+}
+
+.branding-left-1 h3 {
+    padding-top: 5rem;
+}
+
+.branding-left-1 {
+    grid-column: 1 / 7;
+    grid-row: 13 / 14;
+    align-self: center;
+    justify-self: center;
+    padding: 0 .6rem;
+}
+
+.coffee-mindmap {
+    grid-column: 1 / 7;
+    grid-row: 14 / 15;
+    align-self: center;
+    justify-self: center;
+    margin: 5rem 0;
+    max-width: 100%;
+}
+
+.logo-design {
+    grid-column: 1 / 7;
+    grid-row: 15 / 16;
+    align-self: center;
+    justify-self: center;
+    padding: 2rem .6rem;
+}
+
+.logo-design h2 {
+    text-align: center;
+}
+
+.logo-sketches {
+    grid-column: 1 / 7;
+    grid-row: 16 / 17;
+    align-self: center;
+    justify-self: center;
+    margin: 1rem 0;
+    max-width: 100%;
+}
+
+.logo-graphics {
+    grid-column: 1 / 7;
+    grid-row: 17 / 18;
+    align-self: center;
+    justify-self: center;
+    margin: 1rem 0;
+    max-width: 100%;
+}
+
+.logo-test {
+    grid-column: 1 / 7;
+    grid-row: 18 / 19;
+    align-self: center;
+    justify-self: center;
+    padding-top: 5rem;
+}
+
+.logo-test h3 {
+    text-align: center;
+}
+
+.draft-logo-top {
+    grid-column: 1 / 7;
+    grid-row: 19 / 20;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 0;
+}
+
+.draft-logo-bottom {
+    grid-column: 1 / 7;
+    grid-row: 20 / 21;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 0;
+}
+
+.test-quotes {
+    grid-column: 1 / 7;
+    grid-row: 21 / 22;
+    align-self: center;
+    justify-self: center;
+}
+
+.quote {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.final-logo {
+    grid-column: 1 / 7;
+    grid-row: 22 / 23;
+    align-self: center;
+    justify-self: center;
+    padding: 7.5rem 0 2rem 0;
+}
+
+.final-logo-color {
+    grid-column: 1 / 7;
+    grid-row: 23 / 24;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem .5rem;
+}
+
+.final-logo-bw {
+    grid-column: 1 / 7;
+    grid-row: 24 / 25;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem .5rem;
+}
+
+.logo-red-circle {
+    grid-column: 1 / 7;
+    grid-row: 25 / 26;
+    align-self: center;
+    justify-self: center;
+}
+
+.logo-purple-circle {
+    grid-column: 1 / 7;
+    grid-row: 26 / 27;
+    align-self: center;
+    justify-self: center;
+}
+
+.logo-black-circle {
+    grid-column: 1 / 7;
+    grid-row: 27 / 28;
+    align-self: center;
+    justify-self: center;
 }
 
 .logo-red-circle, .logo-purple-circle, .logo-black-circle {
     max-width: 16rem;
     height: auto;
-    padding: .5rem;
+    padding: 5rem .5rem;
 }
 
 .colors {
     grid-column: 1 / 7;
-    grid-row: 10 / 11;
+    grid-row: 28 / 29;
     align-self: center;
     justify-self: center;
-    padding: 5rem 1.6rem;
+    padding: 10rem 1.6rem 5rem 1.6rem;
     text-align: center;
 }
 
-.packaging {
+.bold-text {
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+.colors p {
+    text-align: left;
+}
+
+.column-yellow {
+    border: .1rem solid #D88812;
     grid-column: 1 / 7;
-    grid-row: 11 / 12;
+    grid-row: 29 / 30;
+    align-self: center;
+    justify-self: center;
+    margin: 2rem 0;
+    padding: 1rem 2.5rem 4rem 2.5rem;
+    text-align: center;
+}
+
+.column-yellow p, .column-purple p, .column-red p {
+    margin: .8rem;
+}
+
+.gold-circle, .purple-circle, .red-circle {
+    padding: 2rem 0 1rem 0;
+}
+
+.column-purple {
+    border: .1rem solid #5E0A69;
+    grid-column: 1 / 7;
+    grid-row: 30 / 31;
+    align-self: center;
+    justify-self: center;
+    margin: 2rem 0;
+    padding: 1rem 2.5rem 4rem 2.5rem;
+    text-align: center;
+}
+
+.column-red {
+    border: .1rem solid #8C1932;
+    grid-column: 1 / 7;
+    grid-row: 31 / 32;
+    align-self: center;
+    justify-self: center;
+    margin: 2rem 0;
+    padding: 1rem 2.5rem 4rem 2.5rem;
+    text-align: center;
+}
+
+.lesson {
+    grid-column: 1 / 7;
+    grid-row: 32 / 33;
     align-self: center;
     justify-self: center;
     padding: 5rem 1.6rem;
+    text-align: left;
+}
+
+.not-blue {
+    grid-column: 1 / 7;
+    grid-row: 33 / 34;
+    align-self: center;
+    justify-self: center;
+    padding: 0 1.6rem 7rem 1.6rem;
+    text-align: center;
+}
+
+.packaging1 {
+    grid-column: 1 / 7;
+    grid-row: 34 / 35;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 1.6rem 0 1.6rem;
+}
+
+.packaging1 h2 {
+    text-align: center;
+}
+
+.packaging2-title {
+    display: none;
+}
+
+.packaging2 {
+    display: none;
+}
+
+.package-guides {
+    grid-column: 1 / 7;
+    grid-row: 35 / 36;
+    align-self: center;
+    justify-self: center;
+    padding: 0 1.6rem 2.5rem 1.6rem;
+}
+
+.package-guides li {
+    margin: 1rem 0;
 }
 
 .bag-sketch {
+    grid-column: 1 / 7;
+    grid-row: 36 / 37;
+    align-self: center;
+    justify-self: center;
     max-width: 23rem;
     height: auto;
 }
 
-.packaging .column-left, .packaging .column-mid, .packaging .column-right {
+.bag-illustrations {
+    grid-column: 1 / 7;
+    grid-row: 37 / 38;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 1.6rem;
+}
+
+.bag-illustrations h3 {
     text-align: center;
+}
+
+.column-brazil {
+    grid-column: 1 / 7;
+    grid-row: 38 / 39;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 7.5rem;
+}
+
+.column-peru {
+    grid-column: 1 / 7;
+    grid-row: 39 / 40;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 7.5rem;
+}
+
+.column-kenya {
+    grid-column: 1 / 7;
+    grid-row: 40 / 41;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 7.5rem;
+}
+
+.column-brazil h2, .column-peru h2, .column-kenya h2 {
+    text-align: center;
+}
+
+.brazil-sketch, .peru-sketch, .kenya-sketch {
+    max-width: 100%;
+    height: auto;
+}
+
+.final-bags {
+    grid-column: 1 / 7;
+    grid-row: 41 / 42;
+    align-self: center;
+    justify-self: center;
+    padding: 7.5rem .6rem 0 .6rem;
+}
+
+.brazil-bag {
+    grid-column: 1 / 7;
+    grid-row: 42 / 43;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 0;
+}
+
+.peru-bag {
+    grid-column: 1 / 7;
+    grid-row: 43 / 44;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 0;
+}
+
+.kenya-bag {
+    grid-column: 1 / 7;
+    grid-row: 44 / 45;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 0;
 }
 
 .brazil-bag, .peru-bag, .kenya-bag {
@@ -289,49 +646,354 @@ h3.statement {
     height: auto;
 }
 
+.brand-guides {
+    border: .3rem solid #66D3C8;
+    border-radius: 1.8rem;
+    grid-column: 1 / 7;
+    grid-row: 45 / 46;
+    align-self: center;
+    justify-self: center;
+    margin: 3rem;
+    padding: .8rem 1.5rem;
+}
+
 .wireframes {
     grid-column: 1 / 7;
-    grid-row: 12 / 13;
+    grid-row: 46 / 47;
+    align-self: center;
+    justify-self: center;
+    margin-top: 5rem;
+    padding: 5rem 1.6rem 0 1.6rem;
+}
+
+.wireframes-list {
+    grid-column: 1 / 7;
+    grid-row: 47 / 48;
+    align-self: center;
+    justify-self: center;
+    padding: 0 1.6rem 5rem 1.6rem;
+}
+
+.wireframes-list h4 {
+    margin-top: 5rem;
+}
+
+.wireframes-list li {
+    margin: 1rem 0;
+}
+
+.wireframe-sketch {
+    grid-column: 1 / 7;
+    grid-row: 48 / 49;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 5rem 1.6rem;
+}
+
+.wireframe {
+    grid-column: 1 / 7;
+    grid-row: 49 / 50;
     align-self: center;
     justify-self: center;
     padding: 5rem 1.6rem;
 }
 
-.wirefame-sketch, .wireframe {
-    max-width: 40rem;
+.mobile-wireframe {
+    grid-column: 1 / 7;
+    grid-row: 50 / 51;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 1.6rem;
+}
+
+.large-layout, .mobile-layout {
+    max-width: 100%;
     height: auto;
 }
 
 .mockups {
     grid-column: 1 / 7;
-    grid-row: 13 / 14;
+    grid-row: 51 / 52;
     align-self: center;
     justify-self: center;
+    margin-top: 3rem;
+    padding: 5rem 1.6rem;
+}
+
+.likes {
+    grid-column: 1 / 7;
+    grid-row: 52 / 53;
+    align-self: center;
+    justify-self: center;
+    padding: 0 1.6rem 2.5rem 1.6rem;
+}
+
+.dislikes {
+    grid-column: 1 / 7;
+    grid-row: 53 / 54;
+    align-self: center;
+    justify-self: center;
+    padding: 0 1.6rem 2.5rem 1.6rem;
+}
+
+.mockup-title1 {
+    display: none;
+}
+
+.mockup-title2 {
+    display: none;
+}
+
+.mockup-drafts {
+    display: none;
+}
+
+.mockup1 {
+    grid-column: 1 / 7;
+    grid-row: 54 / 55;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 5rem 1.6rem;
+}
+
+.mockup2 {
+    grid-column: 1 / 7;
+    grid-row: 55 / 56;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 5rem 1.6rem;
+}
+
+.mockup3 {
+    grid-column: 1 / 7;
+    grid-row: 56 / 57;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 5rem 1.6rem;
+}
+
+.mockup4 {
+    grid-column: 1 / 7;
+    grid-row: 57 / 58;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 5rem 1.6rem;
+}
+
+.mockup5 {
+    grid-column: 1 / 7;
+    grid-row: 58 / 59;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
     padding: 5rem 1.6rem;
 }
 
 .mockup-v1, .mockup-v2, .mockup-v3, .mockup-v4, .mockup-v5 {
-    max-width: 40rem;
+    max-width: 100%;
     height: auto;
 }
 
 .develop {
     grid-column: 1 / 7;
-    grid-row: 14 / 15;
+    grid-row: 59 / 60;
     align-self: center;
     justify-self: center;
+    margin-top: 3rem;
     padding: 5rem 1.6rem;
+    text-align: center;
+}
+
+.develop p {
+    text-align: left;
+    padding-bottom: 5rem;
 }
 
 .conclusion {
     grid-column: 1 / 7;
-    grid-row: 15 / 16;
+    grid-row: 60 / 61;
     align-self: center;
     justify-self: center;
     padding: 5rem 1.6rem;
 }
 
+.previous-mobile {
+    grid-column: 1 / 2;
+    grid-row: 61 / 62;
+    align-self: center;
+    justify-self: left;
+    padding-left: 1.6rem;
+}
+
+.previous {
+    display: none;
+}
+
+.link-to-top {
+    grid-column: 1 / 7;
+    grid-row: 61 / 62;
+    align-self: center;
+    justify-self: center;
+    margin: 3rem;
+    padding: .8rem 1.5rem;
+}
+
+.next-mobile {
+    grid-column: 6 / 7;
+    grid-row: 61 / 62;
+    align-self: center;
+    justify-self: right;
+    padding-right: 1.6rem;
+}
+
+.previous-mobile i, .next-mobile i {
+    color: #66D3C8;
+    font-size: 2.4rem;
+}
+
+.next {
+    display: none;
+}
+
+@media only screen and (min-width: 625px) {
+
+  h2 {
+      font-size: 4.8rem;
+  }
+
+  .illustration-beans {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      align-self: center;
+      justify-self: center;
+      max-width: 9rem;
+      height: auto;
+      padding: 1rem;
+  }
+
+  .challenge {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      align-self: center;
+      justify-self: center;
+      max-width: 21rem;
+      margin-bottom: 1rem;
+      padding: 0 2rem;
+      text-align: center;
+  }
+
+  .challenge-text {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      align-self: center;
+      justify-self: center;
+      padding-bottom: 5rem;
+  }
+
+  .illustration-mug {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      align-self: center;
+      justify-self: center;
+      max-width: 7.7rem;
+      height: auto;
+      padding: 1rem;
+  }
+
+  .solution {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+      align-self: center;
+      justify-self: center;
+      margin-bottom: 1rem;
+  }
+
+  .solution-text {
+      grid-column: 1 / 3;
+      grid-row: 4 / 5;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .discovery {
+      grid-column: 1 / 7;
+      grid-row: 7 / 8;
+      padding: 5rem 1.6rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .discovery-intro {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      align-self: center;
+      justify-self: center;
+      margin-bottom: 1rem;
+      text-align: center;
+  }
+
+  .illustration-discover {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+  }
+
+  .discovery-text {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      justify-self: center;
+  }
+
+  .company {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+  }
+
+  .products {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+  }
+
+  .audience {
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
+  }
+
+  .competitors {
+      grid-column: 2 / 3;
+      grid-row: 4 / 5;
+  }
+
+  .brand-outline {
+      padding: 2.5rem 5rem 5rem 5rem;
+  }
+
+}
+
+
 @media only screen and (min-width: 675px) {
+
+  h3 {
+      font-size: 3.6rem;
+  }
+
+  p, li {
+      font-size: 2rem;
+  }
+
   .hero-content p {
       font-size: 2.4rem;
   }
@@ -352,6 +1014,7 @@ h3.statement {
   }
 
   .column-left, .column-mid, .column-right {
+      align-self: start;
       justify-self: center;
       max-width: 100%;
       padding: 5rem 1rem;
@@ -366,25 +1029,39 @@ h3.statement {
       margin: 1.5rem 0;
   }
 
-  .overview p, .discovery-intro p {
-      font-size: 2rem;
-  }
-
   .company p, .products p, .audience p, .competitors p {
       font-size: 1.8rem;
   }
 
+  .mission {
+      padding: 5rem;
+  }
+
   .brand-outline {
-      padding: 3rem 10rem 6rem 10rem;
+      padding: 3rem 8rem 6rem 8rem;
   }
 
-  .brand-outline h3 {
-      font-size: 3.6rem;
+  .logo-red-circle {
+      grid-column: 1 / 3;
+      grid-row: 25 / 28;
+      align-self: center;
+      justify-self: center;
   }
 
-  .brand-outline p {
-      font-size: 2rem;
+  .logo-purple-circle {
+      grid-column: 3 / 5;
+      grid-row: 25 / 28;
+      align-self: center;
+      justify-self: center;
   }
+
+  .logo-black-circle {
+      grid-column: 5 / 7;
+      grid-row: 25 / 28;
+      align-self: center;
+      justify-self: center;
+  }
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -393,8 +1070,613 @@ h3.statement {
       padding: 10rem 0;
   }
 
+  .mission {
+      padding: 15rem 7.5rem;
+  }
+
+  .branding-title {
+      font-size: 4.8rem;
+      grid-column: 1 / 7;
+      grid-row: 9 / 10;
+      align-self: center;
+      justify-self: center;
+      padding-top: 11rem;
+      text-align: center;
+  }
+
+  .brand-personality {
+      grid-column: 1 / 7;
+      grid-row: 10 / 11;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .caffeine-words {
+      grid-column: 1 / 7;
+      grid-row: 11 / 12;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .coffee-words {
+      grid-column: 1 / 7;
+      grid-row: 12 / 13;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .logo-red-circle, .logo-purple-circle, .logo-black-circle {
+      max-width: 16rem;
+      height: auto;
+  }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+  .branding-left-1 {
+      grid-column: 1 / 4;
+      grid-row: 13 / 14;
+      align-self: center;
+      justify-self: center;
+      padding: 7.5rem 4rem 4rem .6rem;
+  }
+
+  .branding-left-1 h3 {
+      padding-top: 0;
+  }
+
+  .coffee-mindmap {
+      grid-column: 4 / 7;
+      grid-row: 13 / 14;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .logo-design {
+      grid-column: 1 / 7;
+      grid-row: 14 / 15;
+      align-self: center;
+      justify-self: center;
+      padding: 6rem .6rem;
+  }
+
+  .logo-sketches {
+      grid-column: 1 / 7;
+      grid-row: 15 / 16;
+      align-self: center;
+      justify-self: center;
+      margin-bottom: 5rem;
+  }
+
+  .logo-graphics {
+      grid-column: 1 / 7;
+      grid-row: 16 / 17;
+      align-self: center;
+      justify-self: center;
+      margin: 5rem 0;
+  }
+
+  .draft-logo-top {
+      grid-column: 1 / 4;
+      grid-row: 17 / 18;
+      align-self: center;
+      justify-self: center;
+      padding-top: 5rem;
+  }
+
+  .draft-logo-bottom {
+      grid-column: 1 / 4;
+      grid-row: 18 / 19;
+      align-self: center;
+      justify-self: center;
+      padding-top: 0;
+  }
+
+  .logo-test {
+      grid-column: 4 / 7;
+      grid-row: 17 / 18;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .logo-test h3 {
+      text-align: left;
+  }
+
+  .test-quotes {
+      grid-column: 4 / 7;
+      grid-row: 18 / 19;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .final-logo {
+      grid-column: 1 / 7;
+      grid-row: 19 / 20;
+      align-self: center;
+      justify-self: center;
+      padding: 12.5rem 0 5rem 0;
+  }
+
+  .final-logo-color {
+      grid-column: 2 / 4;
+      grid-row: 20 / 21;
+      align-self: center;
+      justify-self: center;
+      padding: 3rem 2rem;
+  }
+
+  .final-logo-bw {
+      grid-column: 4 / 6;
+      grid-row: 20 / 21;
+      align-self: center;
+      justify-self: center;
+      padding: 3rem 2rem;
+  }
+
+  .logo-red-circle {
+      grid-column: 1 / 3;
+      grid-row: 21 / 22;
+      align-self: center;
+      justify-self: center;
+      padding-bottom: 15rem;
+  }
+
+  .logo-purple-circle {
+      grid-column: 3 / 5;
+      grid-row: 21 / 22;
+      align-self: center;
+      justify-self: center;
+      padding-bottom: 15rem;
+  }
+
+  .logo-black-circle {
+      grid-column: 5 / 7;
+      grid-row: 21 / 22;
+      align-self: center;
+      justify-self: center;
+      padding-bottom: 15rem;
+  }
+
+  .colors {
+      grid-column: 1 / 7;
+      grid-row: 22 / 23;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+      text-align: center;
+  }
+
+  .column-yellow {
+      grid-column: 1 / 3;
+      grid-row: 23 / 24;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+      text-align: center;
+  }
+
+  .column-purple {
+      grid-column: 3 / 5;
+      grid-row: 23 / 24;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+      text-align: center;
+  }
+
+  .column-red {
+      grid-column: 5 / 7;
+      grid-row: 23 / 24;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+      text-align: center;
+  }
+
+  .lesson {
+      grid-column: 1 / 4;
+      grid-row: 24 / 25;
+      align-self: center;
+      justify-self: center;
+      padding: 7.5rem 1.6rem;
+      text-align: left;
+  }
+
+  .lesson h2 {
+      font-size: 3.6rem;
+      text-align: center;
+  }
+
+  .not-blue {
+      grid-column: 4 / 7;
+      grid-row: 24 / 25;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+      text-align: center;
+  }
+
+  .packaging1 {
+      display: none;
+  }
+
+  .packaging2-title {
+      display: block;
+      grid-column: 1 / 7;
+      grid-row: 25 / 26;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem 0 1.6rem;
+  }
+
+  .packaging2 {
+      display: block;
+      grid-column: 1 / 4;
+      grid-row: 26 / 27;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+  }
+
+  .package-guides {
+      grid-column: 4 / 7;
+      grid-row: 26 / 27;
+      align-self: center;
+      justify-self: center;
+      padding: 2.5rem 1.6rem 5rem 1.6rem;
+  }
+
+  .package-guides li {
+      margin: 1rem 0;
+  }
+
+  .bag-sketch {
+      grid-column: 4 / 7;
+      grid-row: 27 / 28;
+      align-self: center;
+      justify-self: center;
+      max-width: 23rem;
+      height: auto;
+      padding: 2.5rem 0;
+  }
+
+  .bag-illustrations {
+      grid-column: 1 / 4;
+      grid-row: 27 / 28;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+  }
+
+  .bag-illustrations h3 {
+      text-align: left;
+  }
+
+  .column-brazil {
+      grid-column: 1 / 3;
+      grid-row: 28 / 29;
+      align-self: auto;
+      justify-self: center;
+      padding: 5rem 0;
+  }
+
+  .column-peru {
+      grid-column: 3 / 5;
+      grid-row: 28 / 29;
+      align-self: auto;
+      justify-self: center;
+      padding: 5rem 0;
+  }
+
+  .column-kenya {
+      grid-column: 5 / 7;
+      grid-row: 28 / 29;
+      align-self: auto;
+      justify-self: center;
+      padding: 5rem 0;
+  }
+
+  .column-brazil h2, .column-peru h2, .column-kenya h2 {
+      text-align: center;
+  }
+
+  .peru-sketch {
+      padding-top: 2rem;
+  }
+
+  .kenya-sketch {
+      padding-top: 5rem;
+  }
+
+  .final-bags {
+      grid-column: 1 / 7;
+      grid-row: 29 / 30;
+      align-self: center;
+      justify-self: center;
+      padding-top: 7.5rem;
+  }
+
+  .brazil-bag {
+      grid-column: 1 / 3;
+      grid-row: 30 / 31;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 0 10rem 0;
+  }
+
+  .peru-bag {
+      grid-column: 3 / 5;
+      grid-row: 30 / 31;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 0 10rem 0;
+  }
+
+  .kenya-bag {
+      grid-column: 5 / 7;
+      grid-row: 30 / 31;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 0 10rem 0;
+  }
+
+  .brazil-bag, .peru-bag, .kenya-bag {
+      max-width: 25rem;
+      height: auto;
+  }
+
+  .brand-guides {
+      border: .3rem solid #66D3C8;
+      border-radius: 1.8rem;
+      grid-column: 1 / 7;
+      grid-row: 31 / 32;
+      align-self: center;
+      justify-self: center;
+      margin: 3rem;
+      padding: .8rem 1.5rem;
+  }
+
+  .wireframes {
+      grid-column: 1 / 4;
+      grid-row: 32 / 33;
+      align-self: center;
+      justify-self: center;
+      margin-top: 5rem;
+      padding: 5rem 1.6rem 0 1.6rem;
+  }
+
+  .wireframes-list {
+      grid-column: 1 / 4;
+      grid-row: 33 / 34;
+      align-self: center;
+      justify-self: center;
+      padding: 0 1.6rem 0 1.6rem;
+  }
+
+  .wireframes-list li {
+      margin: 3rem 0;
+  }
+
+  .wireframe-sketch {
+      grid-column: 4 / 7;
+      grid-row: 32 / 34;
+      align-self: center;
+      justify-self: center;
+      max-width: 100%;
+      height: auto;
+      padding: 20rem 1.6rem 5rem 1.6rem;
+  }
+
+  .wireframe {
+      grid-column: 1 / 4;
+      grid-row: 34 / 35;
+      align-self: auto;
+      justify-self: center;
+      padding: 5rem;
+  }
+
+  .mobile-wireframe {
+      grid-column: 4 / 7;
+      grid-row: 34 / 35;
+      align-self: auto;
+      justify-self: center;
+      padding: 5rem 1.6rem 8rem 1.6rem;
+  }
+
+  .large-layout, .mobile-layout {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .mockups {
+      grid-column: 1 / 7;
+      grid-row: 35 / 36;
+      align-self: center;
+      justify-self: center;
+      margin-top: 0;
+      padding: 10rem 1.6rem 5rem 1.6rem;
+  }
+
+  .mockups h2 {
+      text-align: center;
+  }
+
+  .likes {
+      grid-column: 1 / 4;
+      grid-row: 36 / 37;
+      align-self: auto;
+      justify-self: center;
+      padding: 0 1.6rem 2.5rem 1.6rem;
+  }
+
+  .dislikes {
+      grid-column: 4 / 7;
+      grid-row: 36 / 37;
+      align-self: auto;
+      justify-self: center;
+      padding: 0 1.6rem 2.5rem 1.6rem;
+  }
+
+  .likes li, .dislikes li {
+      margin: 2rem 0;
+  }
+
+  .mockup1 {
+      display: none;
+  }
+
+  .mockup2 {
+      display: none;
+  }
+
+  .mockup3 {
+      display: none;
+  }
+
+  .mockup4 {
+      display: none;
+  }
+
+  .mockup5 {
+      display: none;
+  }
+
+  .mockup-title1 {
+      display: block;
+      grid-column: 1 / 3;
+      grid-row: 37 / 38;
+      align-self: auto;
+      justify-self: left;
+      margin: 1rem;
+      padding-top: 5rem;
+  }
+
+  .mockup-title2 {
+      display: block;
+      grid-column: 5 / 7;
+      grid-row: 37 / 38;
+      align-self: auto;
+      justify-self: right;
+      margin: 1rem;
+      padding-top: 5rem;
+  }
+
+  .mockup-drafts {
+      display: block;
+      grid-column: 1 / 7;
+      grid-row: 38 / 39;
+      align-self: auto;
+      justify-self: left;
+      max-width: 100%;
+      height: auto;
+      padding: 0 0 10rem 0;
+  }
+
+
+  .develop {
+      grid-column: 1 / 7;
+      grid-row: 39 / 40;
+      align-self: center;
+      justify-self: center;
+      margin-top: 3rem;
+      padding: 5rem 1.6rem 12.5rem 1.6rem;
+      text-align: center;
+  }
+
+  .develop p {
+      text-align: left;
+      padding-bottom: 5rem;
+  }
+
+  .conclusion {
+      grid-column: 1 / 7;
+      grid-row: 40 / 41;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem 10rem 1.6rem;
+  }
+
+  .conclusion h2 {
+      text-align: center;
+  }
+
+  .previous {
+      display: block;
+      background-color: #66D3C8;
+      border: .1rem solid #66D3C8;
+      border-radius: 1.8rem;
+      color: #FFFFFF;
+      grid-column: 1 / 3;
+      grid-row: 41 / 42;
+      align-self: center;
+      justify-self: left;
+      margin: 3rem;
+      padding: .8rem 1.5rem;
+  }
+
+  .previous-mobile {
+      display: none;
+  }
+
+  .link-to-top {
+      grid-column: 1 / 7;
+      grid-row: 41 / 42;
+      align-self: center;
+      justify-self: center;
+      margin: 3rem;
+      padding: .8rem 1.5rem;
+  }
+
+  .next {
+      display: block;
+      background-color: #66D3C8;
+      border: .1rem solid #66D3C8;
+      border-radius: 1.8rem;
+      color: #FFFFFF;
+      grid-column: 5 / 7;
+      grid-row: 41 / 42;
+      align-self: center;
+      justify-self: right;
+      margin: 3rem;
+      padding: .8rem 3.2rem;
+  }
+
+  .next-mobile {
+      display: none;
+  }
+
+}
+
+@media only screen and (min-width: 1100px) {
+
   .brand-outline {
       padding: 3rem 12.5rem 6rem 12.5rem;
+  }
+
+  .brand-personality, .caffeine-words, .coffee-words {
+      display: none;
+  }
+
+  .mind-maps {
+      display: block;
+      grid-column: 1 / 7;
+      grid-row: 10 / 13;
+      max-width: 100%;
+      text-align: center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+
+  .branding-left-1 {
+      padding: 15rem 4rem 4rem 1rem;
+  }
+
+  .coffee-mindmap {
+      padding-top: 10rem;
   }
 
 }
