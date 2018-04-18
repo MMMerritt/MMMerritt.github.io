@@ -4,7 +4,7 @@ html {
 }
 
 h1 {
-    color: #2E2E2E;
+    color: #757575;
     font-family: 'Open Sans Condensed', 'Arial', 'Helvetica', sans-serif;
     font-size: 6.4rem;
     font-weight: 300;
@@ -12,22 +12,23 @@ h1 {
 }
 
 h2 {
-    color: #5D5D5D;
+    color: #757575;
     font-family: 'Open Sans Condensed', 'Arial', 'Helvetica', sans-serif;
-    font-size: 3rem;
+    font-size: 3.6rem;
     font-weight: 300;
 }
 
 h3 {
-    color: #5D5D5D;
+    color: #757575;
     font-family: 'Open Sans Condensed', 'Arial', 'Helvetica', sans-serif;
     font-size: 2.4rem;
     font-weight: 300;
     margin: 1rem 0;
+    padding-top: 2rem;
 }
 
 h4 {
-    color: #5D5D5D;
+    color: #757575;
     font-family: 'Open Sans Condensed', 'Arial', 'Helvetica', sans-serif;
     font-size: 2.4rem;
     font-weight: 300;
@@ -44,22 +45,2039 @@ p, li {
 a {
     color: #66D3C8;
     font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
     text-decoration: none;
 }
 
+.bold-text {
+    font-weight: 700;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
 .container {
     display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 1142px;
 }
 
 .hero-content {
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
     align-self: center;
     justify-self: center;
     text-align: center;
-    padding: 5rem 0;
+    padding: 6rem 1rem;
 }
 
 .hero-content p {
     padding-bottom: 3rem;
+}
+
+.prototype {
+    border: .3rem solid #66D3C8;
+    border-radius: 1.8rem;
+    margin: 3rem;
+    padding: .8rem 1.5rem;
+}
+
+.specs-column-left {
+    grid-column: 1 / 7;
+    grid-row: 3 / 4;
+}
+
+.specs-column-mid {
+    grid-column: 1 / 7;
+    grid-row: 4 / 5;
+}
+
+.specs-column-right {
+    grid-column: 1 / 7;
+    grid-row: 5 / 6;
+}
+
+.specs-column-left, .specs-column-mid, .specs-column-right {
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    padding: 3rem 1rem;
+}
+
+.specs-column-left h4, .specs-column-mid h4, .specs-column-right h4 {
+    margin-bottom: 1.5rem;
+}
+
+.specs-column-left p, .specs-column-mid p, .specs-column-right p {
+    margin: 1rem 0;
+}
+
+.problem {
+    grid-column: 1 / 5;
+    grid-row: 6 / 7;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 1.6rem 0 1.6rem;
+}
+
+.illustration-pizza {
+    grid-column: 4 / 7;
+    grid-row: 6 / 7;
+    align-self: end;
+    justify-self: left;
+    max-width: 7.2rem;
+    height: auto;
+    padding: 3rem;
+}
+
+.problem-text {
+    grid-column: 1 / 7;
+    grid-row: 7 / 8;
+    align-self: center;
+    justify-self: center;
+    max-width: 69.6rem;
+    padding: 0 1.6rem 5rem 1.6rem;
+}
+
+.illustration-truck {
+    grid-column: 1 / 3;
+    grid-row: 8 / 9;
+    align-self: end;
+    justify-self: center;
+    max-width: 7.2rem;
+    height: auto;
+    padding: 3rem 1.6rem;
+}
+
+.solution {
+    grid-column: 3 / 7;
+    grid-row: 8 / 9;
+    align-self: center;
+    justify-self: left;
+    padding: 5rem 1.6rem 0 1.6rem;
+}
+
+.solution-text {
+    grid-column: 1 / 7;
+    grid-row: 9 / 10;
+    align-self: center;
+    justify-self: center;
+    max-width: 69.6rem;
+    padding: 0 1.6rem 5rem 1.6rem;
+}
+
+.user-surveys {
+    grid-column: 1 / 7;
+    grid-row: 10 / 11;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 1.6rem;
+}
+
+.illustration-clipboard {
+    grid-column: 1 / 7;
+    grid-row: 11 / 12;
+    align-self: center;
+    justify-self: center;
+    max-width: 7.2rem;
+    height: auto;
+}
+
+.survey-topics {
+    grid-column: 1 / 7;
+    grid-row: 12 / 13;
+    align-self: center;
+    justify-self: center;
+}
+
+.survey-topics li {
+    margin: 1rem 0;
+}
+
+.discoveries {
+    font-weight: 700;
+    grid-column: 1 / 7;
+    grid-row: 13 / 14;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 0 1rem 0;
+}
+
+.discoveries-list {
+    border: .3rem solid #9857AD;
+    grid-column: 1 / 7;
+    grid-row: 14 / 15;
+    align-self: center;
+    justify-self: center;
+    padding: 2.5rem 1.6rem 2.5rem 3rem;
+}
+
+.discoveries-list li {
+    margin: 2rem 0;
+}
+
+.surveys-lesson {
+    grid-column: 1 / 7;
+    grid-row: 15 / 16;
+    align-self: center;
+    justify-self: center;
+    padding: 2rem 1.6rem;
+}
+
+.full-surveys {
+    border: .3rem solid #66D3C8;
+    border-radius: 1.8rem;
+    grid-column: 1 / 7;
+    grid-row: 16 / 17;
+    align-self: center;
+    justify-self: center;
+    margin: 3rem 3rem 7.5rem 3rem;
+    padding: .8rem 1.5rem;
+}
+
+.personas {
+    grid-column: 1 / 7;
+    grid-row: 17 / 18;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 1.6rem;
+}
+
+.personas h2 {
+    text-align: center;
+}
+
+.persona-left {
+    grid-column: 1 / 7;
+    grid-row: 18 / 19;
+    align-self: center;
+    justify-self: center;
+    padding: 1.6rem;
+    text-align: center;
+}
+
+.persona-mid {
+    grid-column: 1 / 7;
+    grid-row: 19 / 20;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 1.6rem 1.6rem 1.6rem;
+    text-align: center;
+}
+
+.persona-right {
+    grid-column: 1 / 7;
+    grid-row: 20 / 21;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 1.6rem;
+    text-align: center;
+}
+
+.avatar {
+    padding: 3rem 1.6rem 0 1.6rem;
+}
+
+.persona-left h3, .persona-mid h3, .persona-right h3 {
+    margin-bottom: 1rem;
+}
+
+.persona-left p, .persona-mid p, .persona-right p {
+    margin: 1rem 0;
+    text-align: left;
+}
+ p.description {
+    text-align: center;
+    padding-bottom: 1.6rem;
+ }
+
+ .label {
+     color: #757575;
+     font-family: 'Open Sans Condensed', 'Arial', 'Helvetica', sans-serif;
+     font-size: 2.0rem;
+     font-weight: 300;
+ }
+
+ .persona-left h4, .persona-mid h4, .persona-right h4 {
+     margin-bottom: 1rem;
+     text-align: left;
+ }
+
+ .persona-left ul, .persona-mid ul, .persona-right ul {
+     margin-bottom: 1rem;
+     text-align: left;
+ }
+
+ .persona-left li, .persona-mid li, .persona-right li {
+     font-size: 1.6rem;
+     margin-bottom: 1rem;
+ }
+
+.competitors {
+    grid-column: 1 / 7;
+    grid-row: 21 / 22;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 1.6rem;
+}
+
+.competitors h2 {
+    text-align: center;
+}
+
+.competitor-1 {
+    grid-column: 1 / 4;
+    grid-row: 22 / 23;
+    align-self: center;
+    justify-self: center;
+}
+
+.competitor-2 {
+    grid-column: 4 / 7;
+    grid-row: 22 / 23;
+    align-self: center;
+    justify-self: center;
+}
+
+.competitor-3 {
+    grid-column: 1 / 4;
+    grid-row: 23 / 24;
+    align-self: center;
+    justify-self: center;
+}
+
+.competitor-4 {
+    grid-column: 4 / 7;
+    grid-row: 23 / 24;
+    align-self: center;
+    justify-self: center;
+}
+
+.competitor-1, .competitor-2, .competitor-3, .competitor-4 {
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.competitor-logo {
+    max-width: 7.5rem;
+    height: auto;
+}
+
+.strengths {
+    grid-column: 1 / 7;
+    grid-row: 24 / 25;
+    align-self: center;
+    justify-self: center;
+}
+
+.weaknesses {
+    grid-column: 1 / 7;
+    grid-row: 25 / 26;
+    align-self: center;
+    justify-self: center;
+}
+
+.opportunities {
+    grid-column: 1 / 7;
+    grid-row: 26 / 27;
+    align-self: center;
+    justify-self: center;
+}
+
+.strengths li, .weaknesses li, .opportunities li {
+    margin-bottom: 1rem;
+}
+
+.branding {
+    grid-column: 1 / 7;
+    grid-row: 27 / 28;
+    align-self: center;
+    justify-self: center;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.brand-personality {
+    grid-column: 1 / 7;
+    grid-row: 28 / 29;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.word-associations {
+    display: none;
+    grid-column: 1 / 7;
+    grid-row: 29 / 30;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.name-ideas {
+    grid-column: 1 / 7;
+    grid-row: 30 / 31;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.mind-map-trio {
+    display: none;
+}
+
+.brand-goals {
+    grid-column: 1 / 7;
+    grid-row: 31 / 32;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 1.6rem;
+}
+
+.food-truck-mind-map {
+    grid-column: 1 / 7;
+    grid-row: 32 / 33;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    grid-column: 1 / 7;
+    grid-row: 33 / 34;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 1.6rem;
+}
+
+.logo h2 {
+    text-align: center;
+}
+
+.logo-sketches {
+    grid-column: 1 / 7;
+    grid-row: 34 / 35;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.name {
+    grid-column: 1 / 7;
+    grid-row: 35 / 36;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 1.6rem;
+}
+
+.draft-logo-1 {
+    grid-column: 1 / 7;
+    grid-row: 36 / 37;
+    align-self: center;
+    justify-self: center;
+    padding: 1rem 1.6rem;
+}
+
+.draft-logo-2 {
+    grid-column: 1 / 7;
+    grid-row: 37 / 38;
+    align-self: center;
+    justify-self: center;
+    padding: 1rem 1.6rem;
+}
+
+.draft-logo-3 {
+    grid-column: 1 / 7;
+    grid-row: 38 / 39;
+    align-self: center;
+    justify-self: center;
+    padding: 1rem 1.6rem;
+}
+
+.testing {
+    grid-column: 1 / 7;
+    grid-row: 39 / 40;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 1.6rem;
+}
+
+.logo-final {
+    grid-column: 1 / 7;
+    grid-row: 40 / 41;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 1.6rem;
+}
+
+.final-logo-1 {
+    grid-column: 1 / 7;
+    grid-row: 41 / 42;
+    align-self: center;
+    justify-self: center;
+    padding: 2rem 1.6rem;
+}
+
+.final-logo-2 {
+    grid-column: 1 / 7;
+    grid-row: 42 / 43;
+    align-self: center;
+    justify-self: center;
+    padding: 2rem 1.6rem;
+}
+
+.final-logo-3 {
+    grid-column: 1 / 7;
+    grid-row: 43 / 44;
+    align-self: center;
+    justify-self: center;
+    padding: 2rem 1.6rem;
+}
+
+.final-logo-4 {
+    grid-column: 1 / 7;
+    grid-row: 44 / 45;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 2rem 1.6rem;
+}
+
+.final-logo-5 {
+    grid-column: 1 / 7;
+    grid-row: 45 / 46;
+    align-self: center;
+    justify-self: center;
+    padding: 2rem 1.6rem;
+}
+
+.final-logo-6 {
+    grid-column: 1 / 7;
+    grid-row: 46 / 47;
+    align-self: center;
+    justify-self: center;
+    padding: 2rem 1.6rem;
+}
+
+.type {
+    grid-column: 1 / 7;
+    grid-row: 47 / 48;
+    align-self: center;
+    justify-self: center;
+    padding: 7.5rem 1.6rem;
+}
+
+.type h2, .roboto-m, .roboto-r, .lowercase, .uppercase {
+    text-align: center;
+}
+
+.roboto-m {
+  font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  padding: 4rem 0 0 0;
+}
+
+.roboto-r {
+  font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 400;
+  margin-top: 1.6rem;
+  padding: 0 0 4rem 0;
+}
+
+.colors1 {
+    grid-column: 1 / 7;
+    grid-row: 48 / 49;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.color-primary {
+    grid-column: 1 / 7;
+    grid-row: 49 / 50;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.color-secondary {
+    grid-column: 1 / 7;
+    grid-row: 50 / 51;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.color-primary .orange, .color-secondary .fuchsia {
+    padding: 1.6rem;
+    text-align: left;
+}
+
+.colors2 {
+    display: none;
+}
+
+.user-stories {
+    grid-column: 1 / 7;
+    grid-row: 51 / 52;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 1.6rem;
+}
+
+.user-stories h2 {
+    text-align: center;
+}
+
+.user-stories .quote {
+    padding-top: 3rem;
+}
+
+.user-stories li {
+    margin-bottom: 1rem;
+}
+
+p.user-flows {
+    padding-top: 3rem;
+}
+
+.flow-diagrams {
+    grid-column: 1 / 7;
+    grid-row: 52 / 53;
+    align-self: center;
+    justify-self: center;
+}
+
+.flow-diagrams-link {
+    border: .3rem solid #66D3C8;
+    border-radius: 1.8rem;
+    margin: 3rem;
+    padding: .8rem 1.5rem;
+}
+
+.flow-diagrams-img {
+    display: none;
+}
+
+.wireframes {
+    grid-column: 1 / 7;
+    grid-row: 53 / 54;
+    align-self: center;
+    justify-self: center;
+    padding: 15rem 1.6rem 3rem 1.6rem;
+}
+
+.wireframes h2 {
+    text-align: center;
+}
+
+.wireframes .bold-text {
+    padding-top: 3rem;
+}
+
+.wireframes-img {
+    grid-column: 1 / 7;
+    grid-row: 54 / 55;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.mockups {
+    grid-column: 1 / 7;
+    grid-row: 55 / 56;
+    align-self: center;
+    justify-self: center;
+    padding: 15rem 1.6rem 3rem 1.6rem;
+}
+
+.mockups h2 {
+    text-align: center;
+}
+
+.first-mockups {
+    grid-column: 1 / 7;
+    grid-row: 56 / 57;
+    align-self: center;
+    justify-self: center;
+    padding-top: 0;
+}
+
+.mockup-draft1 {
+    grid-column: 1 / 7;
+    grid-row: 57 / 58;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 1.6rem;
+}
+
+.mockup-draft2 {
+    grid-column: 1 / 7;
+    grid-row: 58 / 59;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 1.6rem;
+}
+
+.mockup-draft3 {
+    grid-column: 1 / 7;
+    grid-row: 59 / 60;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 1.6rem;
+}
+
+.mockup-draft4 {
+    grid-column: 1 / 7;
+    grid-row: 60 / 61;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 1.6rem;
+}
+
+.mockup-draft5 {
+    grid-column: 1 / 7;
+    grid-row: 61 / 62;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 1.6rem;
+}
+
+.mockup-draft6 {
+    grid-column: 1 / 7;
+    grid-row: 62 / 63;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 1.6rem;
+}
+
+.mockup-text {
+    grid-column: 1 / 6;
+    grid-row: 63 / 64;
+    align-self: center;
+    justify-self: center;
+    padding: 1.6rem;
+}
+
+.arrow {
+    grid-column: 6 / 7;
+    grid-row: 63 / 64;
+    align-self: center;
+    justify-self: center;
+    margin: 1.6rem 0;
+}
+
+.final-mockup {
+    grid-column: 1 / 7;
+    grid-row: 64 / 65;
+    align-self: center;
+    justify-self: center;
+}
+
+.mockup-final1 {
+    grid-column: 1 / 7;
+    grid-row: 65 / 66;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 1.6rem;
+}
+
+.mockup-final2 {
+    grid-column: 1 / 7;
+    grid-row: 66 / 67;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 1.6rem;
+}
+
+.mockup-final3 {
+    grid-column: 1 / 7;
+    grid-row: 67 / 68;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 1.6rem;
+}
+
+.mockup-final4 {
+    grid-column: 1 / 7;
+    grid-row: 68 / 69;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 1.6rem;
+}
+
+.mockup-final5 {
+    grid-column: 1 / 7;
+    grid-row: 69 / 70;
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
+    height: auto;
+    padding: 1.6rem;
+}
+
+.pref-tests {
+    grid-column: 1 / 7;
+    grid-row: 70 / 71;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 1.6rem 3rem 1.6rem;
+}
+
+.test-1 {
+    grid-column: 1 / 7;
+    grid-row: 71 / 72;
+    align-self: center;
+    justify-self: center;
+    padding: 1.6rem;
+}
+
+.test-1 h4 {
+    margin-top: 1.6rem;
+}
+
+.test1-option-a {
+    grid-column: 1 / 7;
+    grid-row: 72 / 73;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.test1-option-b {
+    grid-column: 1 / 7;
+    grid-row: 73 / 74;
+    align-self: center;
+    justify-self: center;
+    padding-top: 7.5rem;
+    text-align: center;
+}
+
+.test1-conclusion {
+    grid-column: 1 / 7;
+    grid-row: 74 / 75;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 1.6rem;
+}
+
+.test1-conclusion li {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.test-2 {
+    grid-column: 1 / 7;
+    grid-row: 75 / 76;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 1.6rem 1.6rem 1.6rem;
+}
+
+.test-2 h4 {
+    margin-top: 1.6rem;
+}
+
+.test2-option-a {
+    grid-column: 1 / 7;
+    grid-row: 76 / 77;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.test2-option-a ul, .test2-option-b ul {
+    padding: 0 1.6rem 0 3.2rem;
+}
+
+.test2-option-a li, .test2-option-b li {
+    font-style: italic;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.test2-option-b {
+    grid-column: 1 / 7;
+    grid-row: 77 / 78;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 0 3rem 0;
+    text-align: center;
+}
+
+.test2-v1, .test2-v2 {
+   max-width: 100%;
+   height: auto;
+}
+
+.test2-conclusion {
+    grid-column: 1 / 7;
+    grid-row: 78 / 79;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 1.6rem;
+}
+
+.test2-conclusion h4 {
+    text-align: center;
+}
+
+.test-3 {
+    grid-column: 1 / 7;
+    grid-row: 79 / 80;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 1.6rem 0 1.6rem;
+}
+
+.test-3 h4 {
+    margin-top: 1.6rem;
+}
+
+.test3-option-a {
+    grid-column: 1 / 7;
+    grid-row: 80 / 81;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.test3-option-b {
+    grid-column: 1 / 7;
+    grid-row: 81 / 82;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.test3-v1, .test3-v2 {
+    max-width: 100%;
+    height: auto;
+}
+
+.test3-conclusion {
+    grid-column: 1 / 7;
+    grid-row: 82 / 83;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 1.6rem;
+}
+
+.test3-lessons {
+    grid-column: 1 / 7;
+    grid-row: 83 / 84;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem 1.6rem 7.5rem 1.6rem;
+}
+
+.prototype-text {
+    grid-column: 1 / 7;
+    grid-row: 84 / 85;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem 1.6rem;
+}
+
+.prototype-text h2 {
+    text-align: center;
+}
+
+.prototype-end {
+    border: .3rem solid #66D3C8;
+    border-radius: 1.8rem;
+    grid-column: 1 / 7;
+    grid-row: 85 / 86;
+    align-self: center;
+    justify-self: center;
+    margin: 3rem;
+    padding: .8rem 1.5rem;
+}
+
+.conclusion {
+    grid-column: 1 / 7;
+    grid-row: 86 / 87;
+    align-self: center;
+    justify-self: center;
+    padding: 7.5rem 1.6rem;
+}
+
+.conclusion h2 {
+    text-align: center;
+}
+
+.previous-mobile {
+    grid-column: 1 / 2;
+    grid-row: 87 / 88;
+    align-self: center;
+    justify-self: left;
+    padding-left: 1.6rem;
+}
+
+.previous {
+    display: none;
+}
+
+.link-to-top {
+    grid-column: 1 / 7;
+    grid-row: 87 / 88;
+    align-self: center;
+    justify-self: center;
+    margin: 3rem;
+    padding: .8rem 1.5rem;
+}
+
+.next-mobile {
+    grid-column: 6 / 7;
+    grid-row: 87 / 88;
+    align-self: center;
+    justify-self: right;
+    padding-right: 1.6rem;
+}
+
+.previous-mobile i, .next-mobile i {
+    color: #66D3C8;
+    font-size: 2.4rem;
+}
+
+.next {
+    display: none;
+}
+
+@media only screen and (min-width: 625px) {
+
+  h2 {
+      font-size: 4.8rem;
+  }
+
+}
+
+@media only screen and (min-width: 675px) {
+
+  h3 {
+      font-size: 3.6rem;
+  }
+
+  p, li {
+      font-size: 2rem;
+  }
+
+  .hero-content p {
+      font-size: 2.4rem;
+  }
+
+  .specs-column-left {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+  }
+
+  .specs-column-mid {
+      grid-column: 3 / 5;
+      grid-row: 3 / 4;
+  }
+
+  .specs-column-right {
+      grid-column: 5 / 7;
+      grid-row: 3 / 4;
+  }
+
+  .specs-column-left, .specs-column-mid, .specs-column-right {
+      align-self: start;
+      justify-self: center;
+      max-width: 100%;
+      padding: 5rem 1rem;
+  }
+
+  .specs-column-left h4, .specs-column-mid h4, .specs-column-right h4 {
+      margin-bottom: 3rem;
+  }
+
+  .specs-column-left p, .specs-column-mid p, .specs-column-right p {
+      font-size: 1.8rem;
+      margin: 1.5rem 0;
+  }
+
+  .problem {
+      grid-column: 1 / 7;
+      grid-row: 6 / 7;
+      align-self: center;
+      justify-self: center;
+      margin-bottom: 2rem;
+      padding: 5rem 1.6rem 0 1.6rem;
+  }
+
+  .illustration-pizza {
+      grid-column: 5 / 7;
+      grid-row: 6 / 7;
+      align-self: end;
+      justify-self: left;
+      max-width: 7.2rem;
+      height: auto;
+      padding: 3rem 3rem 3rem 0;
+  }
+
+  .illustration-truck {
+      grid-column: 1 / 4;
+      grid-row: 8 / 9;
+      align-self: end;
+      justify-self: center;
+      max-width: 10rem;
+      height: auto;
+      padding: 3rem 1.6rem;
+  }
+
+  .solution {
+      grid-column: 1 / 7;
+      grid-row: 8 / 9;
+      align-self: center;
+      justify-self: center;
+      margin-bottom: 2rem;
+      padding: 5rem 1.6rem 0 1.6rem;
+  }
+
+  .user-surveys {
+      grid-column: 1 / 7;
+      grid-row: 10 / 11;
+      align-self: center;
+      justify-self: center;
+      padding: 7.5rem 1.6rem;
+  }
+
+  .illustration-clipboard {
+      grid-column: 1 / 4;
+      grid-row: 11 / 13;
+      align-self: center;
+      justify-self: center;
+      max-width: 12.5rem;
+      height: auto;
+  }
+
+  .survey-topics {
+      grid-column: 4 / 7;
+      grid-row: 11 / 13;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .survey-topics li {
+      margin: 2rem 0;
+  }
+
+  .discoveries {
+      grid-column: 1 / 7;
+      grid-row: 13 / 14;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .discoveries-list {
+      padding: 5rem 3rem 5rem 7.5rem;
+  }
+
+  .discoveries-list li {
+      margin: 3rem 0;
+  }
+
+
+}
+
+@media only screen and (min-width: 900px) {
+
+  .user-surveys {
+      grid-column: 1 / 4;
+      grid-row: 10 / 12;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .illustration-clipboard {
+      grid-column: 4 / 7;
+      grid-row: 10 / 11;
+      align-self: end;
+      justify-self: center;
+      padding-bottom: 3rem;
+  }
+
+  .survey-topics {
+      grid-column: 4 / 7;
+      grid-row: 11 / 12;
+      align-self: start;
+      justify-self: center;
+  }
+
+  .discoveries-list {
+      padding: 5rem 5rem 5rem 12.5rem;
+  }
+
+  .full-surveys {
+      margin: 7.5rem 3rem 10rem 3rem;
+  }
+
+  .personas {
+      padding: 10rem 1.6rem;
+  }
+
+  .persona-left {
+      grid-column: 1 / 3;
+      grid-row: 18 / 19;
+      align-self: start;
+      justify-self: center;
+      padding: 1.6rem;
+      text-align: center;
+  }
+
+  .persona-mid {
+      grid-column: 3 / 5;
+      grid-row: 18 / 19;
+      align-self: start;
+      justify-self: center;
+      padding: 1.6rem;
+      text-align: center;
+  }
+
+  .persona-right {
+      grid-column: 5 / 7;
+      grid-row: 18 / 19;
+      align-self: start;
+      justify-self: center;
+      padding: 1.6rem;
+      text-align: center;
+  }
+
+  .competitors {
+      grid-column: 1 / 7;
+      grid-row: 19 / 20;
+      align-self: center;
+      justify-self: center;
+      padding: 10rem 1.6rem 5rem 1.6rem;
+  }
+
+  .competitor-1 {
+      grid-column: 1 / 3;
+      grid-row: 20 / 21;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .competitor-2 {
+      grid-column: 3 / 4;
+      grid-row: 20 / 21;
+      align-self: center;
+      justify-self: left;
+  }
+
+  .competitor-3 {
+      grid-column: 4 / 5;
+      grid-row: 20 / 21;
+      align-self: center;
+      justify-self: right;
+  }
+
+  .competitor-4 {
+      grid-column: 5 / 7;
+      grid-row: 20 / 21;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .competitor-1, .competitor-2, .competitor-3, .competitor-4 {
+      padding: 1.5rem 1rem;
+      text-align: center;
+  }
+
+  .competitor-logo {
+      max-width: 10rem;
+      height: auto;
+  }
+
+  .strengths {
+      grid-column: 1 / 3;
+      grid-row: 21 / 22;
+      align-self: start;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+  }
+
+  .weaknesses {
+      border-left: .1rem solid #979797;
+      border-right: .1rem solid #979797;
+      grid-column: 3 / 5;
+      grid-row: 21 / 22;
+      align-self: start;
+      justify-self: center;
+      margin-top: 3rem;
+      padding: 2rem 1.6rem 7.5rem 1.6rem;
+  }
+
+  .opportunities {
+      grid-column: 5 / 7;
+      grid-row: 21 / 22;
+      align-self: start;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+  }
+
+  .strengths li, .weaknesses li, .opportunities li {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+  }
+
+  .branding {
+      grid-column: 1 / 7;
+      grid-row: 22 / 23;
+      align-self: center;
+      justify-self: center;
+      padding-top: 10rem;
+      text-align: center;
+  }
+
+  .brand-personality {
+      display: none;
+  }
+
+  .word-associations {
+      display: none;
+  }
+
+  .name-ideas {
+      display: none;
+  }
+
+  .mind-map-trio {
+      display: block;
+      grid-column: 1 / 7;
+      grid-row: 23 / 24;
+      align-self: center;
+      justify-self: center;
+      max-width: 140rem;
+      height: auto;
+  }
+
+  .brand-goals {
+      grid-column: 1 / 4;
+      grid-row: 24 / 25;
+      align-self: center;
+      justify-self: center;
+      padding: 3rem 1.6rem;
+  }
+
+  .food-truck-mind-map {
+      grid-column: 4 / 7;
+      grid-row: 24 / 25;
+      align-self: center;
+      justify-self: center;
+      max-width: 100%;
+      height: auto;
+      padding: 5rem 0;
+  }
+
+  .logo {
+      grid-column: 1 / 7;
+      grid-row: 25 / 26;
+      align-self: center;
+      justify-self: center;
+      padding: 3rem 1.6rem;
+  }
+
+  .logo h2 {
+      text-align: center;
+  }
+
+  .logo-sketches {
+      grid-column: 1 / 7;
+      grid-row: 26 / 27;
+      align-self: center;
+      justify-self: center;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .draft-logo-1 {
+      grid-column: 1 / 4;
+      grid-row: 27 / 29;
+      align-self: center;
+      justify-self: center;
+      padding: 1rem 1.6rem;
+  }
+
+  .draft-logo-2 {
+      grid-column: 1 / 4;
+      grid-row: 29 / 31;
+      align-self: center;
+      justify-self: center;
+      padding: 1rem 1.6rem;
+  }
+
+  .draft-logo-3 {
+      grid-column: 1 / 4;
+      grid-row: 31 / 33;
+      align-self: center;
+      justify-self: center;
+      padding: 1rem 1.6rem;
+  }
+
+  .name {
+      grid-column: 4 / 7;
+      grid-row: 27 / 30;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+  }
+
+  .testing {
+      grid-column: 4 / 7;
+      grid-row: 30 / 33;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+  }
+
+  .logo-final {
+      grid-column: 1 / 7;
+      grid-row: 33 / 34;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+  }
+
+  .final-logo-1 {
+      grid-column: 1 / 3;
+      grid-row: 34 / 35;
+      align-self: center;
+      justify-self: center;
+      padding: 3rem 1.6rem 5rem 1.6rem;
+  }
+
+  .final-logo-2 {
+      grid-column: 3 / 5;
+      grid-row: 34 / 35;
+      align-self: center;
+      justify-self: center;
+      padding: 3rem 1.6rem 5rem 1.6rem;
+  }
+
+  .final-logo-3 {
+      grid-column: 5 / 7;
+      grid-row: 34 / 35;
+      align-self: center;
+      justify-self: center;
+      padding: 3rem 1.6rem 5rem 1.6rem;
+  }
+
+  .final-logo-4 {
+      grid-column: 1 / 3;
+      grid-row: 35 / 36;
+      align-self: center;
+      justify-self: center;
+      max-width: 100%;
+      height: auto;
+      padding: 5rem 1.6rem 3rem 1.6rem;
+  }
+
+  .final-logo-5 {
+      grid-column: 3 / 5;
+      grid-row: 35 / 36;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem 3rem 1.6rem;
+  }
+
+  .final-logo-6 {
+      grid-column: 5 / 7;
+      grid-row: 35 / 36;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem 3rem 1.6rem;
+  }
+
+  .type {
+      border-right: .1rem solid #979797;
+      grid-column: 1 / 4;
+      grid-row: 36 / 38;
+      align-self: center;
+      justify-self: center;
+      margin-top: 5rem;
+      padding: 2.5rem 1.6rem 5rem 1.6rem;
+  }
+
+  .type h2 {
+      text-align: left;
+  }
+
+  .roboto-m, .roboto-r, .lowercase, .uppercase {
+      text-align: center;
+  }
+
+  .type-primary {
+      padding-bottom: 5rem;
+  }
+
+  .roboto-m {
+      font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+      font-size: 2.0rem;
+      font-weight: 500;
+      margin-bottom: 1.6rem;
+      padding: 4rem 0 0 0;
+  }
+
+  .roboto-r {
+      font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+      font-size: 2.0rem;
+      font-weight: 400;
+      margin-top: 1.6rem;
+      padding: 0 0 4rem 0;
+  }
+
+  .colors1 {
+      display: none;
+  }
+
+  .color-primary {
+      grid-column: 4 / 5;
+      grid-row: 36 / 37;
+      align-self: end;
+      justify-self: center;
+      padding-bottom: 0;
+      text-align: center;
+  }
+
+  .color-secondary {
+      grid-column: 4 / 5;
+      grid-row: 37 / 38;
+      align-self: start;
+      justify-self: center;
+      padding-top: 3rem;
+      text-align: center;
+  }
+
+  .color-primary .orange, .color-secondary .fuchsia {
+      display: none;
+  }
+
+  .colors2 {
+      display: block;
+      grid-column: 5 / 7;
+      grid-row: 36 / 38;
+      align-self: center;
+      justify-self: center;
+      text-align: left;
+  }
+
+  .colors2 p {
+      padding-bottom: 10rem;
+  }
+
+  .user-stories {
+      grid-column: 1 / 7;
+      grid-row: 38 / 39;
+      align-self: center;
+      justify-self: center;
+      padding: 10rem 1.6rem;
+  }
+
+  .user-stories .quote {
+      padding: 7.5rem 3rem 1rem 3rem;
+  }
+
+  .user-stories ul {
+      padding: 0 10rem 1rem 10rem;
+  }
+
+  .user-stories li {
+      margin-bottom: 2rem;
+  }
+
+  p.user-flows {
+      padding-top: 3rem;
+  }
+
+  .flow-diagrams {
+      grid-column: 1 / 7;
+      grid-row: 39 / 40;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .flow-diagrams-link {
+      display: none;
+  }
+
+  .flow-diagrams-img {
+      display: block;
+      padding-bottom: 5rem;
+  }
+
+  .wireframes {
+      grid-column: 1 / 4;
+      grid-row: 40 / 41;
+      align-self: center;
+      justify-self: center;
+      padding: 15rem 1.6rem 15rem 1.6rem;
+  }
+
+  .wireframes h2 {
+      text-align: left;
+  }
+
+  .wireframes .bold-text {
+      padding-top: 5rem;
+  }
+
+  .wireframes li {
+      padding-top: 2rem;
+  }
+
+  .wireframes-img {
+      grid-column: 4 / 7;
+      grid-row: 40 / 41;
+      align-self: center;
+      justify-self: center;
+      max-width: 100%;
+      height: auto;
+  }
+
+  .mockups {
+      grid-column: 1 / 7;
+      grid-row: 41 / 42;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem 3rem 1.6rem;
+  }
+
+  .mockups h2 {
+      text-align: center;
+  }
+
+  .first-mockups {
+      grid-column: 1 / 7;
+      grid-row: 42 / 43;
+      align-self: center;
+      justify-self: left;
+      padding-left: 1.6rem;
+  }
+
+  .mockup-draft1 {
+      grid-column: 1 / 2;
+      grid-row: 43 / 44;
+      align-self: center;
+      justify-self: center;
+      padding: 1rem;
+  }
+
+  .mockup-draft2 {
+      grid-column: 2 / 3;
+      grid-row: 43 / 44;
+      align-self: center;
+      justify-self: center;
+      padding: 1rem;
+  }
+
+  .mockup-draft3 {
+      grid-column: 3 / 4;
+      grid-row: 43 / 44;
+      align-self: center;
+      justify-self: center;
+      padding: 1rem;
+  }
+
+  .mockup-draft4 {
+      grid-column: 4 / 5;
+      grid-row: 43 / 44;
+      align-self: center;
+      justify-self: center;
+      padding: 1rem;
+  }
+
+  .mockup-draft5 {
+      grid-column: 5 / 6;
+      grid-row: 43 / 44;
+      align-self: center;
+      justify-self: center;
+      padding: 1rem;
+  }
+
+  .mockup-draft6 {
+      grid-column: 6 / 7;
+      grid-row: 43 / 44;
+      align-self: center;
+      justify-self: center;
+      padding: 1rem;
+  }
+
+  .mockup-text {
+      grid-column: 2 / 5;
+      grid-row: 44 / 45;
+      align-self: center;
+      justify-self: center;
+      padding: 1.6rem;
+  }
+
+  .arrow {
+      grid-column: 5 / 6;
+      grid-row: 44 / 45;
+      align-self: center;
+      justify-self: center;
+      margin: 1.6rem 0;
+  }
+
+  .final-mockup {
+      grid-column: 1 / 7;
+      grid-row: 45 / 46;
+      align-self: center;
+      justify-self: left;
+      padding-left: 1.6rem;
+      padding-top: 0;
+  }
+
+  .mockup-final1 {
+      grid-column: 1 / 2;
+      grid-row: 46 / 47;
+      align-self: center;
+      justify-self: center;
+      padding: 1rem;
+  }
+
+  .mockup-final2 {
+      grid-column: 2 / 3;
+      grid-row: 46 / 47;
+      align-self: center;
+      justify-self: center;
+      padding: 1rem;
+  }
+
+  .mockup-final3 {
+      grid-column: 3 / 4;
+      grid-row: 46 / 47;
+      align-self: center;
+      justify-self: center;
+      padding: 1rem;
+  }
+
+  .mockup-final4 {
+      grid-column: 4 / 6;
+      grid-row: 46 / 47;
+      align-self: center;
+      justify-self: center;
+      padding: 1rem;
+  }
+
+  .mockup-final5 {
+      grid-column: 6 / 7;
+      grid-row: 46 / 47;
+      align-self: center;
+      justify-self: center;
+      padding: 1rem;
+  }
+
+  .test-discover {
+      grid-column: 1 / 4;
+      grid-row: 47 / 48;
+      align-self: center;
+      justify-self: center;
+      max-width: 15rem;
+      height: auto;
+      padding: 5rem 1rem 1rem 1rem;
+  }
+
+  .pref-tests {
+      grid-column: 4 / 7;
+      grid-row: 47 / 48;
+      align-self: center;
+      justify-self: left;
+      padding: 10rem 1.6rem;
+  }
+
+  .pref-tests li {
+      margin-bottom: 2rem;
+  }
+
+  .test-1 {
+      grid-column: 1 / 4;
+      grid-row: 48 / 49;
+      align-self: center;
+      justify-self: center;
+      padding: 1.6rem;
+  }
+
+  .test-1 h4 {
+      margin-top: 1.6rem;
+  }
+
+  .test1-conclusion {
+      grid-column: 1 / 4;
+      grid-row: 49 / 50;
+      align-self: center;
+      justify-self: center;
+      padding: 3rem 1.6rem 7.5rem 1.6rem;
+  }
+
+  .test1-conclusion li {
+      font-style: italic;
+      margin-bottom: 1rem;
+  }
+
+  .test1-option-a {
+      grid-column: 5 / 6;
+      grid-row: 48 / 50;
+      align-self: center;
+      justify-self: left;
+      padding: 1rem 1rem 1rem 0;
+      text-align: center;
+  }
+
+  .test1-option-b {
+      grid-column: 6 / 7;
+      grid-row: 48 / 50;
+      align-self: center;
+      justify-self: right;
+      padding: 1rem 0 1rem 1rem;
+      text-align: center;
+  }
+
+  .test-v1, .test-v2 {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .test-2 {
+      grid-column: 1 / 7;
+      grid-row: 50 / 51;
+      align-self: center;
+      justify-self: center;
+      padding: 7.5rem 1.6rem 1.6rem 1.6rem;
+  }
+
+  .test-2 h3, .test-2 h4 {
+      margin-top: 1.6rem;
+      text-align: center;
+  }
+
+  .test2-option-a {
+      grid-column: 1 / 4;
+      grid-row: 51 / 52;
+      align-self: start;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+      text-align: center;
+  }
+
+  .test2-option-a ul, .test2-option-b ul {
+      padding: 0 1.6rem 0 3.2rem;
+  }
+
+  .test2-option-a li, .test2-option-b li {
+      font-style: italic;
+      margin-top: 3rem;
+      text-align: left;
+  }
+
+  .test2-option-b {
+      grid-column: 4 / 7;
+      grid-row: 51 / 52;
+      align-self: start;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+      text-align: center;
+  }
+
+  .test2-v1, .test2-v2 {
+     max-width: 100%;
+     height: auto;
+  }
+
+  .test2-conclusion {
+      grid-column: 1 / 7;
+      grid-row: 52 / 53;
+      align-self: center;
+      justify-self: center;
+      padding: 3rem 1.6rem 7.5rem 1.6rem;
+  }
+
+  .test2-conclusion h4 {
+      font-size: 3.6rem;
+      text-align: center;
+  }
+
+  .test-3 {
+      grid-column: 1 / 7;
+      grid-row: 53 / 54;
+      align-self: center;
+      justify-self: center;
+      padding: 7.5rem 1.6rem 3rem 1.6rem;
+      text-align: center;
+  }
+
+  .test-3 h4 {
+      margin-top: 1.6rem;
+  }
+
+  .test3-option-a {
+      grid-column: 1 / 3;
+      grid-row: 54 / 55;
+      align-self: center;
+      justify-self: center;
+      padding: 3rem 0;
+      text-align: center;
+  }
+
+  .test3-option-b {
+      grid-column: 3 / 7;
+      grid-row: 54 / 55;
+      align-self: center;
+      justify-self: center;
+      padding: 3rem 0;
+      text-align: center;
+  }
+
+  .test3-v1, .test3-v2 {
+     max-width: 100%;
+     height: auto;
+  }
+
+  .test3-conclusion {
+      grid-column: 2 / 6;
+      grid-row: 55 / 56;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+  }
+
+  .test3-conclusion .quote {
+      font-size: 1.8rem;
+      font-style: italic;
+      padding: 2rem 3rem 0 3rem;
+  }
+
+  .test3-lessons {
+      grid-column: 1 / 7;
+      grid-row: 56 / 57;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem 7.5rem 1.6rem;
+  }
+
+  .test3-lessons h3 {
+      text-align: center;
+  }
+
+  .prototype-text {
+      grid-column: 1 / 7;
+      grid-row: 57 / 58;
+      align-self: center;
+      justify-self: center;
+      padding: 7.5rem 1.6rem 5rem 1.6rem;
+  }
+
+  .prototype-text h2 {
+      text-align: center;
+  }
+
+  .prototype-end {
+      border: .3rem solid #66D3C8;
+      border-radius: 1.8rem;
+      grid-column: 1 / 7;
+      grid-row: 58 / 59;
+      align-self: center;
+      justify-self: center;
+      margin: 3rem 0 7.5rem 0;
+      padding: .8rem 1.5rem;
+  }
+
+  .conclusion {
+      grid-column: 1 / 7;
+      grid-row: 59 / 60;
+      align-self: center;
+      justify-self: center;
+      padding: 7.5rem 1.6rem;
+  }
+
+  .conclusion h2 {
+      text-align: center;
+  }
+
+  .previous {
+      display: block;
+      background-color: #66D3C8;
+      border: .1rem solid #66D3C8;
+      border-radius: 1.8rem;
+      color: #FFFFFF;
+      grid-column: 1 / 3;
+      grid-row: 61 / 62;
+      align-self: center;
+      justify-self: left;
+      margin: 3rem;
+      padding: .8rem 1.5rem;
+  }
+
+  .previous-mobile {
+      display: none;
+  }
+
+  .link-to-top {
+      grid-column: 1 / 7;
+      grid-row: 61 / 62;
+      align-self: center;
+      justify-self: center;
+      margin: 3rem;
+      padding: .8rem 1.5rem;
+  }
+
+  .next {
+      display: block;
+      background-color: #66D3C8;
+      border: .1rem solid #66D3C8;
+      border-radius: 1.8rem;
+      color: #FFFFFF;
+      grid-column: 5 / 7;
+      grid-row: 61 / 62;
+      align-self: center;
+      justify-self: right;
+      margin: 3rem;
+      padding: .8rem 3.2rem;
+  }
+
+  .next-mobile {
+      display: none;
+  }
+
 }

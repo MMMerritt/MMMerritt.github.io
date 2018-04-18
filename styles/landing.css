@@ -52,6 +52,7 @@ p {
     margin: 1rem .3rem;
     max-width: 40rem;
     height: auto;
+    padding-bottom: 5rem;
 }
 
 .project-2 {
@@ -62,6 +63,7 @@ p {
     margin: 1rem .3rem;
     max-width: 40rem;
     height: auto;
+    padding-bottom: 5rem;
 }
 
 .case-study {
@@ -73,6 +75,10 @@ p {
 
 .case-study-specs {
     text-align: center;
+}
+
+.case-study-specs h2 {
+    margin: 1.5rem 0;
 }
 
 @media only screen and (min-width: 800px) {
@@ -99,6 +105,10 @@ p {
   .case-study {
       height: auto;
       max-width: 50rem;
+  }
+
+  .case-study-specs {
+      display: none;
   }
 
 }
