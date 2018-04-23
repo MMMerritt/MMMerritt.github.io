@@ -1982,11 +1982,15 @@ p.user-flows {
       display: none;
   }
 
-  .flow-diagram-1, .flow-diagram-2, .flow-diagram-3, .flow-diagram-4,
-    .flow-diagram-5, .flow-diagram-6, .flow-diagram-7 {
-      width: 100%;
+  .flow-diagram-1 {
+      max-width: 37.5rem;
       height: auto;
-      max-height: 60rem;
+  }
+
+  .flow-diagram-2, .flow-diagram-3, .flow-diagram-4,
+    .flow-diagram-5, .flow-diagram-6, .flow-diagram-7 {
+      max-width: 100%;
+      height: auto;
   }
 
   /* Next & previous buttons */
