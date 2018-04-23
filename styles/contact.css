@@ -1,0 +1,312 @@
+html {
+    height: 100%;
+    font-size: 10px;
+}
+
+h1 {
+    color: #9857AD;
+    font-family: 'Open Sans Condensed', 'Arial', 'Helvetica', sans-serif;
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin: .5rem 0;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-family: 'Open Sans Condensed', 'Arial', 'Helvetica', sans-serif;
+    font-size: 3.6rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+p {
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+a {
+    color: #66D3C8;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.purple-background {
+    background-color: #77368C;
+    height: 38rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 1142px;
+    z-index: 5;
+}
+
+.contact-question {
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: center;
+    max-width: 75rem;
+    padding: 3rem 1rem 7rem 1rem;
+}
+
+.bold-text {
+    grid-row: 2 / 3;
+    align-self: center;
+    justify-self: center;
+    max-width: 75rem;
+    padding: 5rem 1rem 2rem 1rem;
+}
+
+.email {
+    grid-row: 3 / 4;
+    align-self: center;
+    justify-self: center;
+    max-width: 75rem;
+    padding: 1rem;
+}
+
+form {
+    grid-row: 4 / 5;
+    align-self: center;
+    justify-self: center;
+    max-width: 75rem;
+    min-width: 28rem;
+    padding: 3rem 1rem;
+    display: grid;
+}
+
+.form-name {
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.6rem;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: center;
+    height: 2.8rem;
+    margin: 1.2rem 0;
+    max-width: 100%;
+    min-width: 28rem;
+    padding: .6rem;
+}
+
+.form-email {
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.6rem;
+    grid-row: 2 / 3;
+    align-self: center;
+    justify-self: center;
+    height: 2.8rem;
+    margin: 1.2rem 0;
+    max-width: 100%;
+    min-width: 28rem;
+    padding: .6rem;
+}
+
+.form-message {
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.6rem;
+    grid-row: 3 / 4;
+    align-self: center;
+    justify-self: center;
+    height: 20rem;
+    margin: 1.2rem 0;
+    max-width: 100%;
+    min-width: 28rem;
+    padding: .6rem;
+}
+
+.send-button {
+    background: #66D3C8;
+    border-radius: 1.6rem;
+    color: #FFFFFF;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    grid-row: 4 / 5;
+    align-self: center;
+    justify-self: center;
+    height: 4.5rem;
+    margin: 1.2rem 0;
+    padding: 1rem 5rem;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #9857AD;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.6rem;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #9857AD;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.6rem;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #9857AD;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size: 1.6rem;
+}
+
+
+@media only screen and (min-width: 510px) {
+
+  .purple-background {
+      background-color: #77368C;
+      height: 32rem;
+  }
+
+  form {
+      min-width: 40rem;
+  }
+
+  .form-name {
+      height: 2.8rem;
+      max-width: 100%;
+      min-width: 40rem;
+  }
+
+  .form-email {
+      height: 2.8rem;
+      max-width: 100%;
+      min-width: 40rem;
+  }
+
+  .form-message {
+      height: 20rem;
+      max-width: 100%;
+      min-width: 40rem;
+  }
+
+  .send-button {
+      justify-self: right;
+  }
+
+}
+
+
+@media only screen and (min-width: 675px) {
+
+  .email {
+      align-self: center;
+      justify-self: left;
+  }
+
+  form {
+      min-width: 48rem;
+  }
+
+  .form-name {
+      height: 2.8rem;
+      max-width: 100%;
+      min-width: 48rem;
+  }
+
+  .form-email {
+      height: 2.8rem;
+      max-width: 100%;
+      min-width: 48rem;
+  }
+
+  .form-message {
+      height: 20rem;
+      max-width: 100%;
+      min-width: 48rem;
+  }
+
+}
+
+@media only screen and (min-width: 800px) {
+
+  h2 {
+      font-size: 4.8rem;
+      font-weight: 300;
+  }
+
+  h3 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      margin: 1rem 0;
+  }
+
+  p, a {
+      font-size: 1.8rem;
+  }
+
+  .purple-background {
+      height: 40rem;
+  }
+
+  .container {
+      display: grid;
+      grid-template-columns: 1fr 75rem 1fr;
+  }
+
+  .contact-question {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      align-self: center;
+      justify-self: center;
+  }
+
+  .bold-text {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1rem 0 1rem;
+  }
+
+  .email {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      align-self: center;
+      justify-self: left;
+      padding: 1rem;
+  }
+
+  form {
+      grid-column: 2 / 3;
+      grid-row: 4 / 5;
+      align-self: center;
+      justify-self: center;
+      max-width: 72rem;
+      min-width: 70rem;
+      padding: 0 0 3rem 0;
+  }
+
+  .form-name {
+      height: 2.8rem;
+      max-width: 100%;
+      min-width: 72rem;
+  }
+
+  .form-email {
+      height: 2.8rem;
+      max-width: 100%;
+      min-width: 72rem;
+  }
+
+  .form-message {
+      height: 20rem;
+      max-width: 100%;
+      min-width: 72rem;
+  }
+
+}

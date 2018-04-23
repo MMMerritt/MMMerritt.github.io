@@ -5,7 +5,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Michelle Merritt - Portfolio</title>
-      <link rel="stylesheet" type="text/css" href="styles/landing.css">
+      <link rel="stylesheet" type="text/css" href="styles/contact.css">
       <link rel="stylesheet" type="text/css" href="styles/main.css">
       <link rel="stylesheet" type="text/css" href="styles/normalize.css">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
@@ -26,7 +26,7 @@
         </a>
 
         <div class="navbar-links">
-             <a href="#work" class="top-link">WORK</a>
+             <a href="https://mmmerritt.github.io/#work" class="top-link">WORK</a>
              <a href="#about" class="top-link">ABOUT</a>
              <a href="#contact" class="top-link">CONTACT</a>
         </div>
@@ -42,7 +42,7 @@
 
          <div class="responsive-menu" id="responsive-menu">
             <ul>
-               <li><a href="#work">WORK</a></li>
+               <li><a href="https://mmmerritt.github.io/#work">WORK</a></li>
                <li><a href="#about">ABOUT</a></li>
                <li><a href="#contact">CONTACT</a></li>
             </ul>
@@ -52,48 +52,31 @@
 
       </nav>
 
+      <div class="purple-background">
+      </div>
+
       <div class="container" id="container">
 
-        <section class="hero-content">
+          <h2 class="contact-question">Have a project you’d like to discuss or thoughts on how we could work together?</h1>
 
-          <div class="intro">
-            <h3>Hi! I’m</h3>
-            <h1>Michelle</h1>
-            <h1>Merritt</h1>
-            <h3>an Austin-based</h3>
-            <h3>UX/UI Designer.</h3>
-            <p>I combine a thorough design process with empathy for the user
-              to create engaging and intuitive digital experiences.</p>
-          </div>
+          <h3 class="bold-text">I love making new connections, and discussing new ideas or opportunities! Let’s chat!</h3>
 
-        </section>
+          <p class="email">Feel free to send me a message below or by email: <a href="mailto:merritt.michellem@gmail.com">merritt.michellem@gmail.com</a></p>
 
-        <!--<section class="projects">-->
-          <div class="project-1" id="work">
-            <a href="https://mmmerritt.github.io/brio-coffee.html" class="brio-link">
-                <img src="images/brio-case-study.png" alt="Brio Coffee" class="case-study-brio">
-            </a>
-          </div>
+          <form action="https://formspree.io/merritt.michellem@gmail.com"
+                method="POST">
 
-          <a href="https://mmmerritt.github.io/brio-coffee.html" class="brio-specs">
-            <h2>Brio Coffee</h2>
-            <p>Research | Branding | Site Design + Development</p>
-          </a>
+              <input class="form-name" type="text" name="name" placeholder="Name">
 
+              <input class="form-email" type="email" name="email" placeholder="Email">
 
-          <div class="project-2">
-            <a href="https://mmmerritt.github.io/nomadic-noms.html" class="noms-link">
-                <img src="images/nomadic-noms-case-study.png" alt="Nomadic Noms" class="case-study-noms">
-            </a>
-          </div>
+              <textarea class="form-message" name="user_message" placeholder="Message"></textarea>
 
-          <a href="https://mmmerritt.github.io/nomadic-noms.html" class="noms-specs">
-            <h2>Nomadic Noms</h2>
-            <p>Research | Branding | Mobile App Design</p>
-          </a>
+              <button class="send-button" type="submit">SEND</button>
 
+              <input type="hidden" name="_next" value="//mmmerritt.github.io/product-showcase-brio" />
 
-        <!--</section>-->
+          </form>
 
       </div>
 
