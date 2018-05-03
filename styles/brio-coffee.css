@@ -16,6 +16,7 @@ h2 {
     font-family: 'Open Sans Condensed', 'Arial', 'Helvetica', sans-serif;
     font-size: 3.6rem;
     font-weight: 300;
+    margin: 1rem 0;
 }
 
 h3 {
@@ -45,7 +46,7 @@ p, li {
 a {
     color: #66D3C8;
     font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -82,8 +83,6 @@ a {
     display: none;
 }
 
-
-
 .hero-content {
     grid-column: 1 / 7;
     grid-row: 1 / 2;
@@ -100,7 +99,7 @@ a {
 .hero-content p {
     color: #FFFFFF;
     max-width: 70rem;
-    padding: 3rem 0 5rem 0;
+    padding: 1rem 0 3rem 0;
 }
 
 .site {
@@ -115,7 +114,7 @@ a {
 .project-specs-background {
     background-color: #F9F9F9;
     width: 100%;
-    height: 110rem;
+    height: 95rem;
     position: absolute;
     top: 50;
     left: 0;
@@ -124,23 +123,25 @@ a {
 .column-left {
     grid-column: 1 / 7;
     grid-row: 3 / 4;
+    padding: 3rem .6rem 0 .6rem;
 }
 
 .column-mid {
     grid-column: 1 / 7;
     grid-row: 4 / 5;
+    padding: 0 .6rem;
 }
 
 .column-right {
     grid-column: 1 / 7;
     grid-row: 5 / 6;
+    padding: 0 .6rem 5rem .6rem;
 }
 
 .column-left, .column-mid, .column-right {
     align-self: center;
     justify-self: center;
-    max-width: 100%;
-    padding: 3rem 1rem;
+    text-align: center;
 }
 
 .column-left h4, .column-mid h4, .column-right h4 {
@@ -151,139 +152,151 @@ a {
     margin: 1rem 0;
 }
 
-.overview {
+.challenge {
     grid-column: 1 / 7;
     grid-row: 6 / 7;
     align-self: center;
     justify-self: center;
-    max-width: 69.6rem;
-    padding: 5rem 1.6rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: 5rem .6rem 5rem .6rem;
+    text-align: left;
 }
 
 .illustration-beans {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-    align-self: center;
-    justify-self: center;
     max-width: 9rem;
     height: auto;
-    padding: 10rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 0 0;
 }
 
-.challenge {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-    align-self: center;
-    justify-self: center;
-    max-width: 21rem;
-    padding: 0 2rem 2rem 2rem;
-    text-align: center;
-}
-
-.challenge-text {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
-    align-self: center;
-    justify-self: center;
-}
-
-.illustration-mug {
-    grid-column: 1 / 3;
-    grid-row: 4 / 5;
-    align-self: center;
-    justify-self: center;
-    max-width: 7.7rem;
-    height: auto;
-    padding: 10rem 1rem 1rem 1rem;
+.challenge h2 {
+    display: inline-block;
+    margin-bottom: 0;
 }
 
 .solution {
-    grid-column: 1 / 3;
-    grid-row: 5 / 6;
+    grid-column: 1 / 7;
+    grid-row: 7 / 8;
     align-self: center;
     justify-self: center;
+    padding: 0 .6rem 5rem .6rem;
+    text-align: left;
 }
 
-.solution-text {
-    grid-column: 1 / 3;
-    grid-row: 6 / 7;
-    align-self: center;
-    justify-self: center;
+.illustration-mug {
+    max-width: 7.7rem;
+    height: auto;
+    padding: 1rem 1rem 0 0;
+}
+
+.solution h2 {
+    display: inline-block;
+    margin-bottom: 0;
 }
 
 .discovery {
     grid-column: 1 / 7;
-    grid-row: 7 / 8;
-    padding: 10rem 1.6rem 5rem 1.6rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.discovery-intro {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
+    grid-row: 8 / 9;
     align-self: center;
     justify-self: center;
-    text-align: center;
+    padding: 5rem .6rem;
 }
 
-.illustration-discover {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-}
-
-.discovery-text {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
-    justify-self: center;
-}
-
-.company {
-    grid-column: 1 / 3;
-    grid-row: 4 / 5;
-    justify-self: center;
-    padding: 3rem;
-}
-
-.products {
-    grid-column: 1 / 3;
-    grid-row: 5 / 6;
-    justify-self: center;
-    padding: 3rem;
-}
-
-.audience {
-    grid-column: 1 / 3;
-    grid-row: 6 / 7;
-    justify-self: center;
-    padding: 3rem;
-}
-
-.competitors {
-    grid-column: 1 / 3;
-    grid-row: 7 / 8;
-    justify-self: center;
-    padding: 3rem;
-}
-
-.company p, .products p, .audience p, .competitors p {
-    max-width: 36.5rem;
+.discovery h2 {
+    display: inline-block;
+    margin: 0;
 }
 
 .illustration-discover {
     max-width: 8rem;
     height: auto;
+    padding: 1rem 2rem 0 0;
+}
+
+.company {
+    grid-column: 1 / 7;
+    grid-row: 9 / 10;
+    align-self: center;
+    justify-self: center;
+    padding: 0 .6rem 5rem .6rem;
+}
+
+.products {
+    grid-column: 1 / 7;
+    grid-row: 10 / 11;
+    align-self: center;
+    justify-self: center;
+    padding: 0 .6rem 5rem .6rem;
+}
+
+ .audience {
+     grid-column: 1 / 7;
+     grid-row: 11 / 12;
+     align-self: center;
+     justify-self: center;
+     padding: 0 .6rem 5rem .6rem;
+ }
+
+.competitors {
+    grid-column: 1 / 7;
+    grid-row: 12 / 13;
+    align-self: center;
+    justify-self: center;
+    padding: 0 .6rem 5rem .6rem;
+    text-align: center;
+}
+
+.competitors-large {
+    display: none;
+}
+
+.company h3, .products h3, .audience h3, .competitors h3 {
+    padding: 0;
+    text-align: left;
+}
+
+.company p, .products p, .audience p, .competitors p {
+    max-width: 36.5rem;
+    text-align: left;
+}
+
+.competitors-packaging {
+    max-width: 30rem;
+    height: auto;
+    padding-top: 3rem;
+}
+
+.strengths {
+    grid-column: 1 / 7;
+    grid-row: 13 / 14;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem .6rem;
+}
+
+.weaknesses {
+    grid-column: 1 / 7;
+    grid-row: 14 / 15;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem .6rem;
+}
+
+.opportunities {
+    grid-column: 1 / 7;
+    grid-row: 15 / 16;
+    align-self: center;
+    justify-self: center;
+    padding: 3rem .6rem 5rem .6rem;
+}
+
+.strengths h4, .weaknesses h4, .opportunities h4,
+  .strengths li, .weaknesses li, .opportunities li {
+    margin: 1rem 0;
 }
 
 .mission-background {
     background-color: #F9F9F9;
     width: 100%;
-    height: 90rem;
+    height: 85rem;
     position: absolute;
     top: 150;
     left: 0;
@@ -291,37 +304,52 @@ a {
 
 .mission {
     grid-column: 1 / 7;
-    grid-row: 8 / 9;
+    grid-row: 16 / 17;
     align-self: center;
     justify-self: center;
     max-width: 95rem;
-    padding: 1rem;
+    padding: 1rem 1rem 5rem 1rem;
 }
 
-h3.statement {
-    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+p.statement {
     padding: 4rem 0;
-    text-align: center;
 }
 
 .brand-outline {
     border: .3rem solid #9857AD;
-    padding: 2.5rem 2rem 5rem 2rem;
+    padding: 2rem 2rem 2.5rem 2rem;
+}
+
+.brand-outline p {
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+.user-stories {
+    grid-column: 1 / 7;
+    grid-row: 17 / 18;
+    align-self: center;
+    justify-self: center;
+    padding: 5rem .6rem;
+}
+
+.user-stories li {
+    margin: 1rem 0;
 }
 
 .branding-title {
     font-size: 3.6rem;
     grid-column: 1 / 7;
-    grid-row: 9 / 10;
+    grid-row: 18 / 19;
     align-self: center;
     justify-self: center;
-    padding-top: 11rem;
-    text-align: center;
+    margin-bottom: 1rem;
+    padding: 5rem .6rem 0 .6rem;
 }
 
 .brand-personality {
     grid-column: 1 / 7;
-    grid-row: 10 / 11;
+    grid-row: 19 / 20;
     align-self: center;
     justify-self: center;
     margin: 1rem 0;
@@ -330,7 +358,7 @@ h3.statement {
 
 .caffeine-words {
     grid-column: 1 / 7;
-    grid-row: 11 / 12;
+    grid-row: 20 / 21;
     align-self: center;
     justify-self: center;
     margin: 1rem 0;
@@ -339,7 +367,7 @@ h3.statement {
 
 .coffee-words {
     grid-column: 1 / 7;
-    grid-row: 12 / 13;
+    grid-row: 21 / 22;
     align-self: center;
     justify-self: center;
     margin: 1rem 0;
@@ -356,7 +384,7 @@ h3.statement {
 
 .branding-left-1 {
     grid-column: 1 / 7;
-    grid-row: 13 / 14;
+    grid-row: 22 / 23;
     align-self: center;
     justify-self: center;
     padding: 0 .6rem;
@@ -364,7 +392,7 @@ h3.statement {
 
 .coffee-mindmap {
     grid-column: 1 / 7;
-    grid-row: 14 / 15;
+    grid-row: 23 / 24;
     align-self: center;
     justify-self: center;
     margin: 5rem 0;
@@ -373,19 +401,19 @@ h3.statement {
 
 .logo-design {
     grid-column: 1 / 7;
-    grid-row: 15 / 16;
+    grid-row: 24 / 25;
     align-self: center;
     justify-self: center;
-    padding: 2rem .6rem;
+    padding: 1rem .6rem;
 }
 
 .logo-design h2 {
-    text-align: center;
+    margin: 1rem 0;
 }
 
 .logo-sketches {
     grid-column: 1 / 7;
-    grid-row: 16 / 17;
+    grid-row: 25 / 26;
     align-self: center;
     justify-self: center;
     margin: 1rem 0;
@@ -394,7 +422,7 @@ h3.statement {
 
 .logo-graphics {
     grid-column: 1 / 7;
-    grid-row: 17 / 18;
+    grid-row: 26 / 27;
     align-self: center;
     justify-self: center;
     margin: 1rem 0;
@@ -403,19 +431,19 @@ h3.statement {
 
 .logo-test {
     grid-column: 1 / 7;
-    grid-row: 18 / 19;
+    grid-row: 27 / 28;
     align-self: center;
     justify-self: center;
-    padding-top: 5rem;
+    padding: 5rem .6rem 0 .6rem;
 }
 
 .logo-test h3 {
-    text-align: center;
+    padding: 0;
 }
 
 .draft-logo-top {
     grid-column: 1 / 7;
-    grid-row: 19 / 20;
+    grid-row: 28 / 29;
     align-self: center;
     justify-self: center;
     padding: 3rem 0;
@@ -423,7 +451,7 @@ h3.statement {
 
 .draft-logo-bottom {
     grid-column: 1 / 7;
-    grid-row: 20 / 21;
+    grid-row: 29 / 30;
     align-self: center;
     justify-self: center;
     padding: 3rem 0;
@@ -431,9 +459,10 @@ h3.statement {
 
 .test-quotes {
     grid-column: 1 / 7;
-    grid-row: 21 / 22;
+    grid-row: 30 / 31;
     align-self: center;
     justify-self: center;
+    padding: 0 .6rem 2rem .6rem;
 }
 
 .quote {
@@ -443,59 +472,61 @@ h3.statement {
 
 .final-logo {
     grid-column: 1 / 7;
-    grid-row: 22 / 23;
+    grid-row: 31 / 32;
     align-self: center;
-    justify-self: center;
-    padding: 7.5rem 0 2rem 0;
+    justify-self: left;
+    padding: 5rem .6rem 0 .6rem;
 }
 
 .final-logo-color {
     grid-column: 1 / 7;
-    grid-row: 23 / 24;
+    grid-row: 32 / 33;
     align-self: center;
     justify-self: center;
-    padding: 5rem .5rem;
+    padding: 3rem .5rem;
 }
 
 .final-logo-bw {
     grid-column: 1 / 7;
-    grid-row: 24 / 25;
+    grid-row: 33 / 34;
     align-self: center;
     justify-self: center;
-    padding: 5rem .5rem;
+    padding: 3rem .5rem;
 }
 
 .logo-red-circle {
     grid-column: 1 / 7;
-    grid-row: 25 / 26;
+    grid-row: 34 / 35;
     align-self: center;
     justify-self: center;
+    padding: 3rem .5rem 2rem .5rem;
 }
 
 .logo-purple-circle {
     grid-column: 1 / 7;
-    grid-row: 26 / 27;
+    grid-row: 35 / 36;
     align-self: center;
     justify-self: center;
+    padding: 2rem .5rem;
 }
 
 .logo-black-circle {
     grid-column: 1 / 7;
-    grid-row: 27 / 28;
+    grid-row: 36 / 37;
     align-self: center;
     justify-self: center;
+    padding: 2rem .5rem 7.5rem .5rem;
 }
 
 .logo-red-circle, .logo-purple-circle, .logo-black-circle {
     max-width: 16rem;
     height: auto;
-    padding: 5rem .5rem;
 }
 
 .colors-background {
     background-color: #F9F9F9;
     width: 100%;
-    height: 275rem;
+    height: 235rem;
     position: absolute;
     top: 175;
     left: 0;
@@ -503,11 +534,14 @@ h3.statement {
 
 .colors {
     grid-column: 1 / 7;
-    grid-row: 28 / 29;
+    grid-row: 37 / 38;
     align-self: center;
     justify-self: center;
-    padding: 10rem 1.6rem 5rem 1.6rem;
-    text-align: center;
+    padding: 5rem .6rem 1rem .6rem;
+}
+
+.colors h2 {
+    margin: 1rem 0;
 }
 
 .bold-text {
@@ -523,11 +557,11 @@ h3.statement {
     background-color: #FFFFFF;
     border: .1rem solid #D88812;
     grid-column: 1 / 7;
-    grid-row: 29 / 30;
+    grid-row: 38 / 39;
     align-self: center;
     justify-self: center;
     margin: 2rem 0;
-    padding: 1rem 2.5rem 4rem 2.5rem;
+    padding: 1rem 4rem 4rem 4rem;
     text-align: center;
 }
 
@@ -543,11 +577,11 @@ h3.statement {
     background-color: #FFFFFF;
     border: .1rem solid #5E0A69;
     grid-column: 1 / 7;
-    grid-row: 30 / 31;
+    grid-row: 39 / 40;
     align-self: center;
     justify-self: center;
     margin: 2rem 0;
-    padding: 1rem 2.5rem 4rem 2.5rem;
+    padding: 1rem 4rem 4rem 4rem;
     text-align: center;
 }
 
@@ -555,42 +589,44 @@ h3.statement {
     background-color: #FFFFFF;
     border: .1rem solid #8C1932;
     grid-column: 1 / 7;
-    grid-row: 31 / 32;
+    grid-row: 40 / 41;
     align-self: center;
     justify-self: center;
     margin: 2rem 0;
-    padding: 1rem 2.5rem 4rem 2.5rem;
+    padding: 1rem 4rem 4rem 4rem;
     text-align: center;
+}
+
+.not-blue {
+    max-width: 7rem;
+    height: auto;
+    padding: 0 .6rem;
+}
+
+.lesson h2 {
+    display: inline-block;
+    padding-left: 2rem;
 }
 
 .lesson {
     grid-column: 1 / 7;
-    grid-row: 32 / 33;
+    grid-row: 41 / 42;
     align-self: center;
     justify-self: center;
-    padding: 5rem 1.6rem;
+    padding: 5rem .6rem;
     text-align: left;
-}
-
-.not-blue {
-    grid-column: 1 / 7;
-    grid-row: 33 / 34;
-    align-self: center;
-    justify-self: center;
-    padding: 0 1.6rem 7rem 1.6rem;
-    text-align: center;
 }
 
 .packaging1 {
     grid-column: 1 / 7;
-    grid-row: 34 / 35;
+    grid-row: 42 / 43;
     align-self: center;
     justify-self: center;
-    padding: 5rem 1.6rem 0 1.6rem;
+    padding: 5rem .6rem 0 .6rem;
 }
 
 .packaging1 h2 {
-    text-align: center;
+    margin: 1rem 0;
 }
 
 .packaging2-title {
@@ -603,7 +639,7 @@ h3.statement {
 
 .package-guides {
     grid-column: 1 / 7;
-    grid-row: 35 / 36;
+    grid-row: 43 / 44;
     align-self: center;
     justify-self: center;
     padding: 0 1.6rem 2.5rem 1.6rem;
@@ -615,7 +651,7 @@ h3.statement {
 
 .bag-sketch {
     grid-column: 1 / 7;
-    grid-row: 36 / 37;
+    grid-row: 44 / 45;
     align-self: center;
     justify-self: center;
     max-width: 23rem;
@@ -624,38 +660,34 @@ h3.statement {
 
 .bag-illustrations {
     grid-column: 1 / 7;
-    grid-row: 37 / 38;
+    grid-row: 45 / 46;
     align-self: center;
     justify-self: center;
-    padding: 5rem 1.6rem;
-}
-
-.bag-illustrations h3 {
-    text-align: center;
+    padding: 5rem .6rem 2rem .6rem;
 }
 
 .column-brazil {
     grid-column: 1 / 7;
-    grid-row: 38 / 39;
+    grid-row: 46 / 47;
     align-self: center;
     justify-self: center;
-    padding-bottom: 7.5rem;
+    padding-bottom: 5rem;
 }
 
 .column-peru {
     grid-column: 1 / 7;
-    grid-row: 39 / 40;
+    grid-row: 47 / 48;
     align-self: center;
     justify-self: center;
-    padding-bottom: 7.5rem;
+    padding-bottom: 5rem;
 }
 
 .column-kenya {
     grid-column: 1 / 7;
-    grid-row: 40 / 41;
+    grid-row: 48 / 49;
     align-self: center;
     justify-self: center;
-    padding-bottom: 7.5rem;
+    padding-bottom: 5rem;
 }
 
 .column-brazil h2, .column-peru h2, .column-kenya h2 {
@@ -669,23 +701,24 @@ h3.statement {
 
 .final-bags {
     grid-column: 1 / 7;
-    grid-row: 41 / 42;
+    grid-row: 49 / 50;
     align-self: center;
     justify-self: center;
-    padding: 7.5rem .6rem 0 .6rem;
+    margin-bottom: 2rem;
+    padding: 3rem .6rem 0 .6rem;
 }
 
 .brazil-bag {
     grid-column: 1 / 7;
-    grid-row: 42 / 43;
+    grid-row: 50 / 51;
     align-self: center;
     justify-self: center;
-    padding: 5rem 0;
+    padding: 1rem 0 5rem 0;
 }
 
 .peru-bag {
     grid-column: 1 / 7;
-    grid-row: 43 / 44;
+    grid-row: 51 / 52;
     align-self: center;
     justify-self: center;
     padding: 5rem 0;
@@ -693,7 +726,7 @@ h3.statement {
 
 .kenya-bag {
     grid-column: 1 / 7;
-    grid-row: 44 / 45;
+    grid-row: 52 / 53;
     align-self: center;
     justify-self: center;
     padding: 5rem 0;
@@ -708,7 +741,7 @@ h3.statement {
     border: .3rem solid #66D3C8;
     border-radius: 1.8rem;
     grid-column: 1 / 7;
-    grid-row: 45 / 46;
+    grid-row: 53 / 54;
     align-self: center;
     justify-self: center;
     margin: 3rem;
@@ -717,16 +750,19 @@ h3.statement {
 
 .wireframes {
     grid-column: 1 / 7;
-    grid-row: 46 / 47;
+    grid-row: 54 / 55;
     align-self: center;
     justify-self: center;
-    margin-top: 5rem;
-    padding: 5rem 1.6rem 0 1.6rem;
+    padding: 7.5rem .6rem 0 .6rem;
+}
+
+.wireframes h2 {
+    margin: 1rem 0;
 }
 
 .wireframes-list {
     grid-column: 1 / 7;
-    grid-row: 47 / 48;
+    grid-row: 55 / 56;
     align-self: center;
     justify-self: center;
     padding: 0 1.6rem 5rem 1.6rem;
@@ -742,68 +778,72 @@ h3.statement {
 
 .wireframe-sketch {
     grid-column: 1 / 7;
-    grid-row: 48 / 49;
+    grid-row: 56 / 57;
     align-self: center;
     justify-self: center;
     max-width: 100%;
     height: auto;
-    padding: 5rem 1.6rem;
+    padding: 5rem .6rem;
 }
 
 .wireframe {
     grid-column: 1 / 7;
-    grid-row: 49 / 50;
+    grid-row: 57 / 58;
     align-self: center;
     justify-self: center;
-    padding: 5rem 1.6rem;
+    max-width: 100%;
+    height: auto;
+    padding: 5rem .6rem 7.5rem .6rem;
 }
 
-.mobile-wireframe {
+/*.mobile-wireframe {
     grid-column: 1 / 7;
     grid-row: 50 / 51;
     align-self: center;
     justify-self: center;
     padding: 5rem 1.6rem;
-}
-
-.large-layout, .mobile-layout {
-    max-width: 100%;
-    height: auto;
-}
-
-.mockups-background {
-    background-color: #F9F9F9;
-    width: 100%;
-    height: 650rem;
-    position: absolute;
-    top: 175;
-    left: 0;
-}
+}*/
 
 .mockups {
     grid-column: 1 / 7;
-    grid-row: 51 / 52;
+    grid-row: 58 / 59;
     align-self: center;
-    justify-self: center;
+    justify-self: left;
     margin-top: 3rem;
-    padding: 5rem 1.6rem;
+    padding: 2rem .6rem;
 }
 
-.likes {
+.mockups h2 {
+    margin: 1rem 0;
+}
+
+.mockup-feedback {
     grid-column: 1 / 7;
-    grid-row: 52 / 53;
+    grid-row: 59 / 61;
     align-self: center;
     justify-self: center;
-    padding: 0 1.6rem 2.5rem 1.6rem;
+    padding: 0 1.6rem 2rem 1.6rem;
+}
+
+.likes h4, .dislikes h4 {
+    margin: 2rem 0;
+}
+
+/*.likes {
+    grid-column: 1 / 7;
+    grid-row: 59 / 60;
+    align-self: center;
+    justify-self: center;
+    padding: 0 1.6rem 2rem 1.6rem;
 }
 
 .dislikes {
     grid-column: 1 / 7;
-    grid-row: 53 / 54;
+    grid-row: 60 / 61;
     align-self: center;
     justify-self: center;
-    padding: 0 1.6rem 2.5rem 1.6rem;
-}
+    padding: 0 1.6rem 2rem 1.6rem;
+}*/
 
 .mockup-title1 {
     display: none;
@@ -817,54 +857,48 @@ h3.statement {
     display: none;
 }
 
+.mockup1 h4, .mockup2 h4, .mockup3 h4, .mockup4 h4, .mockup5 h4 {
+    margin: 1rem 0;
+}
+
 .mockup1 {
     grid-column: 1 / 7;
-    grid-row: 54 / 55;
+    grid-row: 61 / 62;
     align-self: center;
     justify-self: center;
-    max-width: 100%;
-    height: auto;
-    padding: 5rem 1.6rem;
+    padding: 5rem .6rem;
 }
 
 .mockup2 {
     grid-column: 1 / 7;
-    grid-row: 55 / 56;
+    grid-row: 62 / 63;
     align-self: center;
     justify-self: center;
-    max-width: 100%;
-    height: auto;
-    padding: 5rem 1.6rem;
+    padding: 5rem .6rem;
 }
 
 .mockup3 {
     grid-column: 1 / 7;
-    grid-row: 56 / 57;
+    grid-row: 63 / 64;
     align-self: center;
     justify-self: center;
-    max-width: 100%;
-    height: auto;
-    padding: 5rem 1.6rem;
+    padding: 5rem .6rem;
 }
 
 .mockup4 {
     grid-column: 1 / 7;
-    grid-row: 57 / 58;
+    grid-row: 64 / 65;
     align-self: center;
     justify-self: center;
-    max-width: 100%;
-    height: auto;
-    padding: 5rem 1.6rem;
+    padding: 5rem .6rem;
 }
 
 .mockup5 {
     grid-column: 1 / 7;
-    grid-row: 58 / 59;
+    grid-row: 65 / 66;
     align-self: center;
     justify-self: center;
-    max-width: 100%;
-    height: auto;
-    padding: 5rem 1.6rem 10rem 1.6rem;
+    padding: 5rem .6rem;
 }
 
 .mockup-v1, .mockup-v2, .mockup-v3, .mockup-v4, .mockup-v5 {
@@ -872,63 +906,74 @@ h3.statement {
     height: auto;
 }
 
+.develop-background {
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 60rem;
+    position: absolute;
+    top: 175;
+    left: 0;
+}
+
 .develop {
     grid-column: 1 / 7;
-    grid-row: 59 / 60;
+    grid-row: 66 / 67;
     align-self: center;
     justify-self: center;
     margin-top: 3rem;
-    padding: 5rem 1.6rem 10rem 1.6rem;
+    padding: 5rem .6rem 10rem .6rem;
     text-align: center;
 }
 
-.develop p {
+.develop h2 {
+    margin: 1rem 0;
     text-align: left;
+}
+
+.develop p {
     padding-bottom: 5rem;
+    text-align: left;
 }
 
 .conclusion-background {
     background-color: #9857AD;
     width: 100%;
-    height: 85rem;
+    height: 70rem;
     position: absolute;
     top: 20;
     left: 0;
 }
 
-.illustration-latte {
-    grid-column: 1 / 7;
-    grid-row: 60 / 61;
-    align-self: center;
-    justify-self: center;
-    max-width: 10rem;
-    height: auto;
-    padding: 5rem 1.6rem 0 1.6rem;
-}
-
 .conclusion {
     grid-column: 1 / 7;
-    grid-row: 61 / 62;
+    grid-row: 67 / 68;
     align-self: center;
     justify-self: center;
-    padding: 0 1.6rem;
+    padding: 5rem .6rem;
+    text-align: left;
 }
 
-.conclusion, .conclusion-text p {
+.illustration-latte {
+    display: inline-block;
+    max-width: 10rem;
+    height: auto;
+    padding: 0 2rem 0 3rem;
+}
+
+.conclusion h2 {
     color: #FFFFFF;
+    display: inline-block;
+    margin-bottom: 0;
 }
 
-.conclusion-text{
-    grid-column: 1 / 7;
-    grid-row: 62 / 63;
-    align-self: center;
-    justify-self: center;
-    padding: 0 1.6rem 5rem 1.6rem;
+.conclusion p {
+    color: #FFFFFF;
+    text-align: left;
 }
 
 .previous-mobile {
     grid-column: 1 / 2;
-    grid-row: 63 / 64;
+    grid-row: 68 / 69;
     align-self: center;
     justify-self: left;
     padding-left: 1.6rem;
@@ -940,7 +985,7 @@ h3.statement {
 
 .link-to-top {
     grid-column: 1 / 7;
-    grid-row: 63 / 64;
+    grid-row: 68 / 69;
     align-self: center;
     justify-self: center;
     margin: 10rem 3rem;
@@ -949,7 +994,7 @@ h3.statement {
 
 .next-mobile {
     grid-column: 6 / 7;
-    grid-row: 63 / 64;
+    grid-row: 68 / 69;
     align-self: center;
     justify-self: right;
     padding-right: 1.6rem;
@@ -965,7 +1010,21 @@ h3.statement {
 }
 
 
+@media only screen and (min-width: 375px) {
+
+  .user-stories p.quote {
+      padding-top: 1rem;
+  }
+
+  .conclusion-background {
+      height: 65rem;
+  }
+
+}
+
+
 @media only screen and (min-width: 415px) {
+
   .mission-background {
       background-color: #F9F9F9;
       width: 100%;
@@ -973,31 +1032,55 @@ h3.statement {
   }
 
   .colors-background {
-      background-color: #F9F9F9;
-      width: 100%;
-      height: 260rem;
-  }
-
-  .mockups-background {
-      background-color: #F9F9F9;
-      width: 100%;
-      height: 735rem;
+      height: 230rem;
   }
 
   .conclusion-background {
-      background-color: #9857AD;
-      width: 100%;
-      height: 75rem;
+      height: 58rem;
+  }
+
+  .conclusion h2 {
+      left: 33%;
   }
 
 }
 
-@media only screen and (min-width: 525px) {
+@media only screen and (min-width: 475px) {
+
   .conclusion-background {
-      background-color: #9857AD;
-      width: 100%;
-      height: 65rem;
+      height: 54rem;
   }
+
+}
+
+
+@media only screen and (min-width: 525px) {
+
+  a {
+      font-size: 1.6rem;
+  }
+
+  h4 {
+      font-size: 2.8rem;
+  }
+
+  .colors-background {
+      height: 222rem;
+  }
+
+  .conclusion-background {
+      height: 52rem;
+  }
+
+  .conclusion {
+      padding-top: 7.5rem;
+  }
+
+  .illustration-latte {
+      padding: 0 5rem;
+  }
+
+
 }
 
 
@@ -1022,133 +1105,21 @@ h3.statement {
       padding-top: 2rem;
   }
 
-  .illustration-beans {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
-      align-self: center;
-      justify-self: center;
-      max-width: 9rem;
-      height: auto;
-      padding: 1rem;
-  }
-
   .challenge {
-      grid-column: 1 / 3;
-      grid-row: 1 / 2;
-      align-self: center;
-      justify-self: center;
-      max-width: 21rem;
-      margin-bottom: 1rem;
-      padding: 0 2rem;
-      text-align: center;
-  }
-
-  .challenge-text {
-      grid-column: 1 / 3;
-      grid-row: 2 / 3;
-      align-self: center;
-      justify-self: center;
-      padding-bottom: 5rem;
-  }
-
-  .illustration-mug {
-      grid-column: 1 / 2;
-      grid-row: 3 / 4;
-      align-self: center;
-      justify-self: center;
-      max-width: 7.7rem;
-      height: auto;
-      padding: 1rem;
-  }
-
-  .solution {
-      grid-column: 1 / 3;
-      grid-row: 3 / 4;
-      align-self: center;
-      justify-self: center;
-      margin-bottom: 1rem;
-  }
-
-  .solution-text {
-      grid-column: 1 / 3;
-      grid-row: 4 / 5;
-      align-self: center;
-      justify-self: center;
-  }
-
-  .discovery {
       grid-column: 1 / 7;
-      grid-row: 7 / 8;
-      padding: 5rem 1.6rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-  }
-
-  .discovery-intro {
-      grid-column: 1 / 3;
-      grid-row: 1 / 2;
+      grid-row: 6 / 7;
       align-self: center;
       justify-self: center;
-      margin-bottom: 1rem;
-      text-align: center;
-  }
-
-  .illustration-discover {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
-      align-self: center;
-      justify-self: center;
-      text-align: center;
-  }
-
-  .discovery-text {
-      grid-column: 1 / 3;
-      grid-row: 2 / 3;
-      justify-self: center;
-  }
-
-  .company {
-      border-bottom: .3rem solid #9857AD;
-      border-right: .3rem solid #9857AD;
-      grid-column: 1 / 2;
-      grid-row: 3 / 4;
-      justify-self: right;
-      margin-top: 5rem;
-      padding: 3rem 8rem;
-  }
-
-  .products {
-      border-bottom: .3rem solid #9857AD;
-      grid-column: 2 / 3;
-      grid-row: 3 / 4;
-      justify-self: left;
-      margin-top: 5rem;
-      padding: 3rem 8rem;
-  }
-
-  .audience {
-      border-right: .3rem solid #9857AD;
-      grid-column: 1 / 2;
-      grid-row: 4 / 5;
-      justify-self: right;
-      padding: 3rem 8rem;
-  }
-
-  .competitors {
-      grid-column: 2 / 3;
-      grid-row: 4 / 5;
-      justify-self: left;
-      padding: 3rem 8rem;
+      padding: 10rem 1.6rem 5rem 1.6rem;
+      text-align: left;
   }
 
   .brand-outline {
       padding: 2.5rem 5rem 5rem 5rem;
   }
 
-  .mockups-background {
-      background-color: #F9F9F9;
-      width: 100%;
-      height: 820rem;
+  .conclusion-background {
+      height: 50rem;
   }
 
 }
@@ -1170,6 +1141,7 @@ h3.statement {
 
   .hero-content p {
       font-size: 2.4rem;
+      padding: 3rem 0 5rem 0;
   }
 
   .project-specs-background {
@@ -1184,6 +1156,7 @@ h3.statement {
   .column-left {
       grid-column: 1 / 3;
       grid-row: 3 / 4;
+      padding: 3rem 7rem 5rem 7rem;
   }
 
   .column-mid {
@@ -1191,11 +1164,13 @@ h3.statement {
       border-right: .1rem solid #979797;
       grid-column: 3 / 5;
       grid-row: 3 / 4;
+      padding: 3rem 7rem 5rem 7rem;
   }
 
   .column-right {
       grid-column: 5 / 7;
       grid-row: 3 / 4;
+      padding: 3rem 7rem 7.5rem 7rem;
   }
 
   .column-left, .column-mid, .column-right {
@@ -1203,11 +1178,10 @@ h3.statement {
       justify-self: center;
       margin-top: 10rem;
       max-width: 100%;
-      padding: 3rem 10rem 5rem 10rem;
   }
 
   .column-left h4, .column-mid h4, .column-right h4 {
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
   }
 
   .column-left p, .column-mid p, .column-right p {
@@ -1215,7 +1189,103 @@ h3.statement {
       margin: 1.5rem 0;
   }
 
-  .company p, .products p, .audience p, .competitors p {
+  .company p, .products p, .audience p {
+      font-size: 1.8rem;
+  }
+
+  .solution {
+      padding: 5rem 1.6rem 10rem 1.6rem;
+  }
+
+  .illustration-beans {
+      padding-left: 23%;
+      padding-right: 2rem;
+  }
+
+  .illustration-mug {
+      padding-left: 23%;
+      padding-right: 2rem;
+  }
+
+  .illustration-discover {
+      padding-left: 23%;
+      padding-right: 2rem;
+  }
+
+  .company {
+      grid-column: 1 / 3;
+      grid-row: 9 / 10;
+      align-self: start;
+      padding: 3rem 2rem 5rem 2rem;
+  }
+
+  .products {
+      border-left: .1rem solid #979797;
+      border-right: .1rem solid #979797;
+      grid-column: 3 / 5;
+      grid-row: 9 / 10;
+      align-self: start;
+      padding: 3rem 2rem 5rem 2rem;
+  }
+
+  .audience {
+      grid-column: 5 / 7;
+      grid-row: 9 / 10;
+      align-self: start;
+      padding: 3rem 2rem 7.5rem 2rem;
+  }
+
+  .competitors {
+      grid-column: 1 / 4;
+      grid-row: 10 / 11;
+      justify-self: left;
+      padding: 5rem 3rem;
+  }
+
+  .competitors p {
+      max-width: 55rem;
+  }
+
+  .competitors-packaging {
+      display: none;
+  }
+
+  .competitors-large {
+      display: block;
+      grid-column: 4 / 7;
+      grid-row: 10 / 11;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 0;
+  }
+
+  .strengths {
+      grid-column: 1 / 3;
+      grid-row: 11 / 12;
+      align-self: start;
+      margin-top: 5rem;
+      padding: 3rem 2rem 7.5rem 2rem;
+  }
+
+  .weaknesses {
+      border-left: .1rem solid #979797;
+      border-right: .1rem solid #979797;
+      grid-column: 3 / 5;
+      grid-row: 11 / 12;
+      align-self: start;
+      margin-top: 5rem;
+      padding: 3rem 2rem 7.5rem 2rem;
+  }
+
+  .opportunities {
+      grid-column: 5 / 7;
+      grid-row: 11 / 12;
+      align-self: start;
+      margin-top: 5rem;
+      padding: 3rem 2rem 7.5rem 2rem;
+  }
+
+  .strengths li, .weaknesses li, .opportunities li {
       font-size: 1.8rem;
   }
 
@@ -1226,62 +1296,189 @@ h3.statement {
   }
 
   .mission {
+      grid-row: 12 / 13;
       padding: 5rem;
+  }
+
+  p.statement {
+      padding: 3rem 8rem;
+      text-align: center;
   }
 
   .brand-outline {
       padding: 3rem 8rem 6rem 8rem;
   }
 
+  .user-stories {
+      grid-row: 13 / 14;
+      padding: 7.5rem .6rem 7.5rem .6rem;;
+  }
+
+  .user-stories h2 {
+      text-align: center;
+  }
+
+  .user-stories p.quote, .user-stories ul {
+      position: relative;
+      left: 12%;
+  }
+
+  .branding-title {
+      grid-row: 14 / 15;
+  }
+
+  .brand-personality {
+      grid-row: 15 / 16;
+  }
+
+  .caffeine-words {
+      grid-row: 16 / 17;
+  }
+
+  .coffee-words {
+      grid-row: 17 / 18;
+  }
+
+  .branding-left-1 {
+      grid-row: 18 / 19;
+  }
+
+  .coffee-mindmap {
+      grid-row: 19 / 20;
+  }
+
+  .logo-design {
+      grid-row: 20 / 21;
+  }
+
+  .logo-sketches {
+      grid-row: 21 / 22;
+  }
+
+  .logo-graphics {
+      grid-row: 22 / 23;
+  }
+
+  .logo-test {
+      grid-row: 23 / 24;
+  }
+
+  .draft-logo-top {
+      grid-row: 24 / 25;
+  }
+
+  .draft-logo-bottom {
+      grid-row: 25 / 26;
+  }
+
+  .test-quotes {
+      grid-row: 26 / 27;
+  }
+
+  .final-logo {
+      grid-row: 27 / 28;
+  }
+
+  .final-logo-color {
+      grid-row: 28 / 29;
+  }
+
+  .final-logo-bw {
+      grid-row: 29 / 30;
+  }
+
   .logo-red-circle {
       grid-column: 1 / 3;
-      grid-row: 25 / 28;
+      grid-row: 30 / 31;
       align-self: center;
       justify-self: center;
+      padding: 2rem .5rem 7.5rem .5rem;
   }
 
   .logo-purple-circle {
       grid-column: 3 / 5;
-      grid-row: 25 / 28;
+      grid-row: 30 / 31;
       align-self: center;
       justify-self: center;
+      padding: 2rem .5rem 7.5rem .5rem;;
   }
 
   .logo-black-circle {
       grid-column: 5 / 7;
-      grid-row: 25 / 28;
+      grid-row: 30 / 31;
       align-self: center;
       justify-self: center;
+      padding: 2rem .5rem 7.5rem .5rem;;
   }
 
   .colors-background {
       background-color: #F9F9F9;
       width: 100%;
-      height: 285rem;
+      height: 240rem;
+  }
+
+  .packaging1 {
+      padding-top: 7.5rem;
+  }
+
+  .mockup-feedback {
+      grid-column: 4 / 7;
+      grid-row: 61 / 62;
+      align-self: center;
+      justify-self: center;
+      padding: 0 1.6rem 2rem 1.6rem;
+  }
+
+  .mockup1 {
+      grid-column: 1 / 4;
+      grid-row: 61 / 62;
+      align-self: start;
+      justify-self: center;
+      padding: 5rem .6rem;
+  }
+
+  .mockup2 {
+      grid-column: 1 / 4;
+      grid-row: 62 / 63;
+      align-self: start;
+      justify-self: center;
+      padding: 5rem .6rem;
+  }
+
+  .mockup3 {
+      grid-column: 4 / 7;
+      grid-row: 62 / 63;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem .6rem;
+  }
+
+  .mockup4 {
+      grid-column: 1 / 4;
+      grid-row: 63 / 64;
+      align-self: start;
+      justify-self: center;
+      padding: 5rem .6rem;
+  }
+
+  .mockup5 {
+      grid-column: 4 / 7;
+      grid-row: 63 / 64;
+      align-self: start;
+      justify-self: center;
+      padding: 5rem .6rem 7.5rem .6rem;
   }
 
   .develop {
       padding-bottom: 15rem;
   }
 
+  .develop h2 {
+      text-align: center;
+  }
+
   .conclusion-background {
-      background-color: #9857AD;
-      width: 100%;
-      height: 62rem;
-  }
-
-  h2.conclusion {
-      padding-top: 5rem;
-  }
-
-  .illustration-latte {
-      grid-column: 1 / 3;
-      grid-row: 60 / 61;
-      align-self: end;
-      justify-self: center;
-      max-width: 10rem;
-      height: auto;
-      padding: 5rem 1.6rem 4rem 1.6rem;
+      height: 60rem;
   }
 
   .conclusion {
@@ -1289,18 +1486,50 @@ h3.statement {
       grid-row: 60 / 61;
       align-self: center;
       justify-self: center;
-      padding: 10rem 1.6rem 0 1.6rem;
+      padding: 7.5rem 1.6rem 5rem 1.6rem;
+
   }
 
-  .conclusion-text{
-      grid-column: 1 / 7;
-      grid-row: 61 / 62;
-      align-self: center;
-      justify-self: center;
-      padding: 0 1.6rem 5rem 1.6rem;
+  .conclusion h2 {
+      padding-left: 33%;
+  }
+
+  .conclusion p {
+      text-align: left;
   }
 
 }
+
+@media only screen and (min-width: 750px) {
+
+  .mission-background {
+      background-color: #F9F9F9;
+      width: 100%;
+      height: 95rem;
+  }
+
+  .wireframe-sketch {
+      grid-column: 1 / 4;
+      grid-row: 56 / 57;
+      align-self: start;
+      justify-self: center;
+      max-width: 90%;
+      height: auto;
+      padding: 5rem .6rem;
+  }
+
+  .wireframe {
+      grid-column: 4 / 7;
+      grid-row: 56 / 57;
+      align-self: start;
+      justify-self: center;
+      max-width: 90%;
+      height: auto;
+      padding: 5rem .6rem 7.5rem .6rem;
+  }
+
+}
+
 
 @media only screen and (min-width: 800px) {
 
@@ -1309,38 +1538,13 @@ h3.statement {
   }
 
   .mission {
-      padding: 15rem 7.5rem;
+      padding: 7.5rem 5rem;
   }
 
   .branding-title {
       font-size: 4.8rem;
-      grid-column: 1 / 7;
-      grid-row: 9 / 10;
-      align-self: center;
-      justify-self: center;
-      padding-top: 11rem;
+      padding-top: 7.5rem;
       text-align: center;
-  }
-
-  .brand-personality {
-      grid-column: 1 / 7;
-      grid-row: 10 / 11;
-      align-self: center;
-      justify-self: center;
-  }
-
-  .caffeine-words {
-      grid-column: 1 / 7;
-      grid-row: 11 / 12;
-      align-self: center;
-      justify-self: center;
-  }
-
-  .coffee-words {
-      grid-column: 1 / 7;
-      grid-row: 12 / 13;
-      align-self: center;
-      justify-self: center;
   }
 
   .logo-red-circle, .logo-purple-circle, .logo-black-circle {
@@ -1348,25 +1552,49 @@ h3.statement {
       height: auto;
   }
 
-  .colors-background {
-      background-color: #F9F9F9;
-      width: 100%;
-      height: 275rem;
+  .mockup5 {
+      padding-bottom: 10rem;
   }
 
 }
 
 @media only screen and (min-width: 900px) {
 
+  .column-left {
+      padding: 3rem 10rem 5rem 10rem;
+  }
+
+  .column-mid {
+      padding: 3rem 10rem 5rem 10rem;
+  }
+
+  .column-right {
+      padding: 3rem 10rem 7.5rem 10rem;
+  }
+
+  .company {
+      padding: 3rem 3rem 5rem 3rem;
+  }
+
+  .products {
+      padding: 3rem 3rem 5rem 3rem;
+  }
+
+  .audience {
+      padding: 3rem 3rem 7.5rem 3rem;
+  }
+
   .mission-background {
-      background-color: #F9F9F9;
-      width: 100%;
-      height: 110rem;
+      height: 92.5rem;
+  }
+
+  .mission {
+      padding-bottom: 10rem;
   }
 
   .branding-left-1 {
       grid-column: 1 / 4;
-      grid-row: 13 / 14;
+      grid-row: 18 / 19;
       align-self: center;
       justify-self: center;
       padding: 7.5rem 4rem 4rem .6rem;
@@ -1378,14 +1606,14 @@ h3.statement {
 
   .coffee-mindmap {
       grid-column: 4 / 7;
-      grid-row: 13 / 14;
+      grid-row: 18 / 19;
       align-self: center;
       justify-self: center;
   }
 
   .logo-design {
       grid-column: 4 / 7;
-      grid-row: 14 / 16;
+      grid-row: 19 / 20;
       align-self: center;
       justify-self: center;
       padding: 6rem 1.6rem;
@@ -1397,7 +1625,7 @@ h3.statement {
 
   .logo-sketches {
       grid-column: 1 / 4;
-      grid-row: 14 / 16;
+      grid-row: 19 / 20;
       align-self: center;
       justify-self: center;
       margin-bottom: 5rem;
@@ -1408,7 +1636,7 @@ h3.statement {
 
   .logo-graphics {
       grid-column: 1 / 7;
-      grid-row: 16 / 17;
+      grid-row: 20 / 21;
       align-self: center;
       justify-self: center;
       margin: 5rem 0;
@@ -1419,7 +1647,7 @@ h3.statement {
 
   .draft-logo-top {
       grid-column: 1 / 4;
-      grid-row: 17 / 18;
+      grid-row: 21 / 22;
       align-self: end;
       justify-self: center;
       padding: 0;
@@ -1427,7 +1655,7 @@ h3.statement {
 
   .draft-logo-bottom {
       grid-column: 1 / 4;
-      grid-row: 18 / 19;
+      grid-row: 22 / 23;
       align-self: center;
       justify-self: center;
       padding-top: 0;
@@ -1435,7 +1663,7 @@ h3.statement {
 
   .logo-test {
       grid-column: 4 / 7;
-      grid-row: 17 / 18;
+      grid-row: 21 / 22;
       align-self: center;
       justify-self: center;
   }
@@ -1446,14 +1674,14 @@ h3.statement {
 
   .test-quotes {
       grid-column: 4 / 7;
-      grid-row: 18 / 19;
+      grid-row: 22 / 23;
       align-self: center;
       justify-self: center;
   }
 
   .final-logo {
       grid-column: 1 / 7;
-      grid-row: 19 / 20;
+      grid-row: 23 / 24;
       align-self: center;
       justify-self: center;
       padding: 12.5rem 0 5rem 0;
@@ -1461,7 +1689,7 @@ h3.statement {
 
   .final-logo-color {
       grid-column: 2 / 4;
-      grid-row: 20 / 21;
+      grid-row: 24 / 25;
       align-self: center;
       justify-self: center;
       padding: 3rem 2rem;
@@ -1469,7 +1697,7 @@ h3.statement {
 
   .final-logo-bw {
       grid-column: 4 / 6;
-      grid-row: 20 / 21;
+      grid-row: 24 / 25;
       align-self: center;
       justify-self: center;
       padding: 3rem 2rem;
@@ -1477,7 +1705,7 @@ h3.statement {
 
   .logo-red-circle {
       grid-column: 1 / 3;
-      grid-row: 21 / 22;
+      grid-row: 25 / 26;
       align-self: center;
       justify-self: center;
       padding-bottom: 15rem;
@@ -1485,7 +1713,7 @@ h3.statement {
 
   .logo-purple-circle {
       grid-column: 3 / 5;
-      grid-row: 21 / 22;
+      grid-row: 25 / 26;
       align-self: center;
       justify-self: center;
       padding-bottom: 15rem;
@@ -1493,21 +1721,19 @@ h3.statement {
 
   .logo-black-circle {
       grid-column: 5 / 7;
-      grid-row: 21 / 22;
+      grid-row: 25 / 26;
       align-self: center;
       justify-self: center;
       padding-bottom: 15rem;
   }
 
   .colors-background {
-      background-color: #F9F9F9;
-      width: 100%;
-      height: 160rem;
+      height: 150rem;
   }
 
   .colors {
       grid-column: 1 / 7;
-      grid-row: 22 / 23;
+      grid-row: 26 / 27;
       align-self: center;
       justify-self: center;
       padding: 10rem 1.6rem 5rem 1.6rem;
@@ -1516,7 +1742,7 @@ h3.statement {
 
   .column-yellow {
       grid-column: 1 / 3;
-      grid-row: 23 / 24;
+      grid-row: 27 / 28;
       align-self: center;
       justify-self: center;
       padding: 5rem;
@@ -1525,7 +1751,7 @@ h3.statement {
 
   .column-purple {
       grid-column: 3 / 5;
-      grid-row: 23 / 24;
+      grid-row: 27 / 28;
       align-self: center;
       justify-self: center;
       padding: 5rem;
@@ -1534,7 +1760,7 @@ h3.statement {
 
   .column-red {
       grid-column: 5 / 7;
-      grid-row: 23 / 24;
+      grid-row: 27 / 28;
       align-self: center;
       justify-self: center;
       padding: 5rem;
@@ -1542,26 +1768,20 @@ h3.statement {
   }
 
   .lesson {
-      grid-column: 1 / 4;
-      grid-row: 24 / 25;
+      grid-column: 1 / 7;
+      grid-row: 28 / 29;
       align-self: center;
       justify-self: center;
       padding: 7.5rem 1.6rem;
-      text-align: left;
+      text-align: center;
   }
 
   .lesson h2 {
       font-size: 3.6rem;
-      text-align: left;
   }
 
-  .not-blue {
-      grid-column: 4 / 7;
-      grid-row: 24 / 25;
-      align-self: center;
-      justify-self: center;
-      padding: 5rem 1.6rem;
-      text-align: center;
+  .lesson p {
+      text-align: left;
   }
 
   .packaging1 {
@@ -1571,7 +1791,7 @@ h3.statement {
   .packaging2-title {
       display: block;
       grid-column: 1 / 7;
-      grid-row: 25 / 26;
+      grid-row: 29 / 30;
       align-self: center;
       justify-self: center;
       padding: 10rem 1.6rem 0 1.6rem;
@@ -1580,7 +1800,7 @@ h3.statement {
   .packaging2 {
       display: block;
       grid-column: 1 / 4;
-      grid-row: 26 / 27;
+      grid-row: 30 / 31;
       align-self: center;
       justify-self: center;
       padding: 5rem 1.6rem;
@@ -1588,7 +1808,7 @@ h3.statement {
 
   .package-guides {
       grid-column: 4 / 7;
-      grid-row: 26 / 27;
+      grid-row: 30 / 31;
       align-self: center;
       justify-self: center;
       padding: 2.5rem 1.6rem 5rem 1.6rem;
@@ -1600,7 +1820,7 @@ h3.statement {
 
   .bag-sketch {
       grid-column: 4 / 7;
-      grid-row: 27 / 28;
+      grid-row: 32 / 33;
       align-self: center;
       justify-self: center;
       max-width: 23rem;
@@ -1610,7 +1830,7 @@ h3.statement {
 
   .bag-illustrations {
       grid-column: 1 / 4;
-      grid-row: 27 / 28;
+      grid-row: 32 / 33;
       align-self: center;
       justify-self: center;
       padding: 5rem 1.6rem;
@@ -1622,7 +1842,7 @@ h3.statement {
 
   .column-brazil {
       grid-column: 1 / 3;
-      grid-row: 28 / 29;
+      grid-row: 33 / 34;
       align-self: auto;
       justify-self: center;
       padding: 5rem 0;
@@ -1630,7 +1850,7 @@ h3.statement {
 
   .column-peru {
       grid-column: 3 / 5;
-      grid-row: 28 / 29;
+      grid-row: 33 / 34;
       align-self: auto;
       justify-self: center;
       padding: 5rem 0;
@@ -1638,7 +1858,7 @@ h3.statement {
 
   .column-kenya {
       grid-column: 5 / 7;
-      grid-row: 28 / 29;
+      grid-row: 33 / 34;
       align-self: auto;
       justify-self: center;
       padding: 5rem 0;
@@ -1658,7 +1878,7 @@ h3.statement {
 
   .final-bags {
       grid-column: 1 / 7;
-      grid-row: 29 / 30;
+      grid-row: 34 / 35;
       align-self: center;
       justify-self: center;
       padding-top: 7.5rem;
@@ -1666,7 +1886,7 @@ h3.statement {
 
   .brazil-bag {
       grid-column: 1 / 3;
-      grid-row: 30 / 31;
+      grid-row: 35 / 36;
       align-self: center;
       justify-self: center;
       padding: 5rem 0 10rem 0;
@@ -1674,7 +1894,7 @@ h3.statement {
 
   .peru-bag {
       grid-column: 3 / 5;
-      grid-row: 30 / 31;
+      grid-row: 35 / 36;
       align-self: center;
       justify-self: center;
       padding: 5rem 0 10rem 0;
@@ -1682,7 +1902,7 @@ h3.statement {
 
   .kenya-bag {
       grid-column: 5 / 7;
-      grid-row: 30 / 31;
+      grid-row: 35 / 36;
       align-self: center;
       justify-self: center;
       padding: 5rem 0 10rem 0;
@@ -1697,16 +1917,16 @@ h3.statement {
       border: .3rem solid #66D3C8;
       border-radius: 1.8rem;
       grid-column: 1 / 7;
-      grid-row: 31 / 32;
+      grid-row: 36 / 37;
       align-self: center;
       justify-self: center;
-      margin: 3rem;
+      margin: 3rem 3rem 5rem 3rem;
       padding: .8rem 1.5rem;
   }
 
   .wireframes {
       grid-column: 1 / 4;
-      grid-row: 32 / 33;
+      grid-row: 37 / 39;
       align-self: center;
       justify-self: center;
       margin-top: 5rem;
@@ -1714,8 +1934,8 @@ h3.statement {
   }
 
   .wireframes-list {
-      grid-column: 1 / 4;
-      grid-row: 33 / 34;
+      grid-column: 4 / 7;
+      grid-row: 37 / 39;
       align-self: center;
       justify-self: center;
       padding: 0 1.6rem 0 1.6rem;
@@ -1725,46 +1945,14 @@ h3.statement {
       margin: 3rem 0;
   }
 
-  .wireframe-sketch {
-      grid-column: 4 / 7;
-      grid-row: 32 / 34;
-      align-self: center;
-      justify-self: center;
-      max-width: 100%;
-      height: auto;
-      padding: 25rem 1.6rem 10rem 1.6rem;
-  }
-
-  .wireframe {
-      grid-column: 1 / 4;
-      grid-row: 34 / 35;
-      align-self: start;
-      justify-self: center;
-      padding: 5rem 7.5rem 7.5rem 7.5rem;
-  }
-
-  .mobile-wireframe {
-      grid-column: 4 / 7;
-      grid-row: 34 / 35;
-      align-self: start;
-      justify-self: center;
-      padding: 5rem 1.6rem 12.5rem 1.6rem;
-  }
-
-  .large-layout, .mobile-layout {
-      max-width: 100%;
-      height: auto;
-  }
-
-  .mockups-background {
-      background-color: #F9F9F9;
-      width: 100%;
-      height: 150rem;
+  .wireframe-sketch, .wireframe {
+      grid-row: 39 / 40;
+      padding: 7.5rem .6rem 10rem .6rem;
   }
 
   .mockups {
       grid-column: 1 / 7;
-      grid-row: 35 / 36;
+      grid-row: 40 / 41;
       align-self: center;
       justify-self: center;
       margin-top: 0;
@@ -1775,9 +1963,26 @@ h3.statement {
       text-align: center;
   }
 
-  .likes {
+  .mockup-feedback {
+      grid-column: 1 / 7;
+      grid-row: 41 / 42;
+      align-self: center;
+      justify-self: center;
+      padding: 0 1.6rem 2rem 1.6rem;
+  }
+
+  .likes, .dislikes {
+      display: inline-block;
+      max-width: 50%;
+  }
+
+  .dislikes {
+      float: right;
+  }
+
+  /*.likes {
       grid-column: 1 / 4;
-      grid-row: 36 / 37;
+      grid-row: 41 / 42;
       align-self: auto;
       justify-self: center;
       padding: 0 1.6rem 2.5rem 1.6rem;
@@ -1785,11 +1990,11 @@ h3.statement {
 
   .dislikes {
       grid-column: 4 / 7;
-      grid-row: 36 / 37;
+      grid-row: 41 / 42;
       align-self: auto;
       justify-self: center;
       padding: 0 1.6rem 2.5rem 1.6rem;
-  }
+  }*/
 
   .likes li, .dislikes li {
       margin: 2rem 0;
@@ -1818,7 +2023,7 @@ h3.statement {
   .mockup-title1 {
       display: block;
       grid-column: 1 / 3;
-      grid-row: 37 / 38;
+      grid-row: 42 / 43;
       align-self: auto;
       justify-self: left;
       margin: 1rem;
@@ -1828,7 +2033,7 @@ h3.statement {
   .mockup-title2 {
       display: block;
       grid-column: 5 / 7;
-      grid-row: 37 / 38;
+      grid-row: 42 / 43;
       align-self: auto;
       justify-self: right;
       margin: 1rem;
@@ -1838,7 +2043,7 @@ h3.statement {
   .mockup-drafts {
       display: block;
       grid-column: 1 / 7;
-      grid-row: 38 / 39;
+      grid-row: 43 / 44;
       align-self: auto;
       justify-self: left;
       max-width: 100%;
@@ -1849,7 +2054,7 @@ h3.statement {
 
   .develop {
       grid-column: 1 / 7;
-      grid-row: 39 / 40;
+      grid-row: 44 / 45;
       align-self: center;
       justify-self: center;
       margin-top: 3rem;
@@ -1868,22 +2073,12 @@ h3.statement {
       height: 65rem;
   }
 
-  .illustration-latte {
-      grid-column: 1 / 3;
-      grid-row: 40 / 41;
-      align-self: end;
-      justify-self: right;
-      max-width: 13rem;
-      height: auto;
-      padding: 5rem 0 4rem 1.6rem;
-  }
-
   .conclusion {
       grid-column: 1 / 7;
       grid-row: 40 / 41;
       align-self: center;
       justify-self: center;
-      padding: 10rem 1.6rem 0 1.6rem;
+      padding: 10rem 1.6rem;
   }
 
   .conclusion-text{
@@ -1949,8 +2144,16 @@ h3.statement {
       height: 60rem;
   }
 
+  p.statement {
+      padding: 3rem 12.5rem;
+  }
+
   .brand-outline {
       padding: 3rem 12.5rem 6rem 12.5rem;
+  }
+
+  .user-stories {
+      padding: 10rem .6rem 7.5rem .6rem;;
   }
 
   .brand-personality, .caffeine-words, .coffee-words {
@@ -1960,7 +2163,7 @@ h3.statement {
   .mind-maps {
       display: block;
       grid-column: 1 / 7;
-      grid-row: 10 / 13;
+      grid-row: 15 / 16;
       max-width: 100%;
       text-align: center;
       -webkit-background-size: cover;
@@ -1976,13 +2179,5 @@ h3.statement {
   .coffee-mindmap {
       padding-top: 10rem;
   }
-
-  .mockups-background {
-      background-color: #F9F9F9;
-      width: 100%;
-      height: 160rem;
-  }
-
-
 
 }
