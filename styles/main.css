@@ -15,8 +15,7 @@ i {
     grid-template-rows: auto 2px;
     width: 100%;
     height: 7rem;
-    max-width: 114rem;
-    margin: 0 auto;
+    margin: 0;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -194,6 +193,7 @@ a.footer-logo {
       grid-row: 1 / 2;
       align-self: center;
       justify-self: left;
+      padding-left: 1rem;
   }
 
   .full-logo {

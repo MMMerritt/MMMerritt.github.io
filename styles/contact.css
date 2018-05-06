@@ -39,33 +39,35 @@ a {
     text-decoration: none;
 }
 
-.purple-background {
-    background-color: #77368C;
-    height: 38rem;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+.landing {
+    margin: 0;
 }
 
 .container {
     display: grid;
-    margin: 0 auto;
+    grid-template-columns: minmax(10px, 1fr) auto minmax(10px, 1fr);
     position: relative;
     width: 100%;
-    max-width: 1142px;
     z-index: 5;
 }
 
+.purple-background {
+    background-color: #77368C;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
 .contact-question {
+    grid-column: 2 / 3;
     grid-row: 1 / 2;
     align-self: center;
     justify-self: center;
     max-width: 75rem;
-    padding: 3rem 1rem 7rem 1rem;
+    padding: 5rem 1rem;
 }
 
 .bold-text {
+    grid-column: 2 / 3;
     grid-row: 2 / 3;
     align-self: center;
     justify-self: center;
@@ -74,6 +76,7 @@ a {
 }
 
 .email {
+    grid-column: 2 / 3;
     grid-row: 3 / 4;
     align-self: center;
     justify-self: center;
@@ -82,6 +85,7 @@ a {
 }
 
 form {
+    grid-column: 2 / 3;
     grid-row: 4 / 5;
     align-self: center;
     justify-self: center;
@@ -167,11 +171,6 @@ form {
 
 @media only screen and (min-width: 510px) {
 
-  .purple-background {
-      background-color: #77368C;
-      height: 32rem;
-  }
-
   form {
       min-width: 40rem;
   }
@@ -248,14 +247,16 @@ form {
   p, a {
       font-size: 1.8rem;
   }
-
-  .purple-background {
-      height: 40rem;
-  }
-
+  
   .container {
       display: grid;
-      grid-template-columns: 1fr 75rem 1fr;
+      grid-template-columns: minmax(10px, 1fr) 75rem minmax(10px, 1fr);
+  }
+
+  .purple-background {
+      background-color: #77368C;
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
   }
 
   .contact-question {
