@@ -83,7 +83,7 @@ i {
 
 .responsive-menu.open {
    grid-row: 2 / 3;
-   grid-column: 1 / 13;
+   grid-column: 1 / 3;
    justify-self: center;
    display: block;
    max-width: 100%;
@@ -110,7 +110,7 @@ i {
 
   .responsive-menu li {
      border-bottom: .1rem solid #D8D8D8;
-     padding: 1rem 15rem;
+     padding: 1rem;
      max-width: 100%;
      text-align: center;
      text-decoration: none;
@@ -121,6 +121,7 @@ i {
      font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
      font-size: 1.4rem;
      max-width: 100%;
+     padding: 1rem 14rem;
      text-align: center;
      text-decoration: none;
  }
@@ -176,6 +177,18 @@ a.footer-logo {
     font-size: 1.2rem;
 }
 
+@media only screen and (min-width: 675px) {
+
+  .icon {
+      padding-left: 3rem;
+  }
+
+  .menu-btn {
+      padding-right: 3rem;
+  }
+
+}
+
 
 @media only screen and (min-width: 800px) {
 
@@ -193,7 +206,7 @@ a.footer-logo {
       grid-row: 1 / 2;
       align-self: center;
       justify-self: left;
-      padding-left: 1rem;
+      padding-left: 2rem;
   }
 
   .full-logo {
@@ -213,7 +226,7 @@ a.footer-logo {
       align-self: center;
       justify-self: right;
       font-size: 1.6rem;
-      margin: 2.7rem 2rem;
+      margin: 2.7rem 4rem 2.7rem 2rem;
   }
 
   a.top-link {
@@ -265,5 +278,54 @@ a.footer-logo {
       text-align: left;
   }
 
+}
+
+
+@media only screen and (min-width: 900px) {
+
+  .logo-link {
+      padding-left: 4rem;
+  }
+
+  .navbar-links {
+      margin: 2.7rem 5rem 2.7rem 2rem;
+  }
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+  .logo-link {
+      padding-left: 6rem;
+  }
+
+  .navbar-links {
+      margin: 2.7rem 7rem 2.7rem 2rem;
+  }
+
+}
+
+@media only screen and (min-width: 1100px) {
+
+  .logo-link {
+      padding-left: 9rem;
+  }
+
+  .navbar-links {
+      margin: 2.7rem 10rem 2.7rem 2rem;
+  }
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+  .logo-link {
+      padding-left: 11rem;
+  }
+
+  .navbar-links {
+      margin: 2.7rem 12rem 2.7rem 2rem;
+  }
 
 }
