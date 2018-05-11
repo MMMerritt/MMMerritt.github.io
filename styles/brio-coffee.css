@@ -160,10 +160,10 @@ a {
 .illustration-beans {
     max-width: 9rem;
     height: auto;
-    padding: 1rem 1rem 0 0;
+    padding: 1rem 0 0 1rem;
 }
 
-.challenge h2 {
+.challenge-heading h2 {
     display: inline-block;
     margin-bottom: 0;
 }
@@ -180,10 +180,10 @@ a {
 .illustration-mug {
     max-width: 7.7rem;
     height: auto;
-    padding: 1rem 1rem 0 0;
+    padding: 1rem 0 0 1rem;
 }
 
-.solution h2 {
+.solution-heading h2 {
     display: inline-block;
     margin-bottom: 0;
 }
@@ -193,10 +193,10 @@ a {
     grid-row: 8 / 9;
     align-self: center;
     justify-self: center;
-    padding: 5rem .6rem;
+    padding: 0 .6rem 5rem .6rem;
 }
 
-.discovery h2 {
+.discovery-heading h2 {
     display: inline-block;
     margin: 0;
 }
@@ -204,7 +204,7 @@ a {
 .illustration-discover {
     max-width: 8rem;
     height: auto;
-    padding: 1rem 2rem 0 0;
+    padding: 1rem 0 0 1rem;
 }
 
 .company {
@@ -591,12 +591,11 @@ p.statement {
 .not-blue {
     max-width: 7rem;
     height: auto;
-    padding: 0 .6rem;
+    padding: 0 1rem;
 }
 
 .lesson h2 {
     display: inline-block;
-    padding-left: 2rem;
 }
 
 .lesson {
@@ -925,18 +924,17 @@ p.statement {
     display: inline-block;
     max-width: 10rem;
     height: auto;
-    padding: 0 2rem 0 3rem;
+    padding: 0 2rem;
 }
 
 .conclusion h2 {
     color: #FFFFFF;
     display: inline-block;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .conclusion p {
     color: #FFFFFF;
-    text-align: left;
 }
 
 .previous-mobile {
@@ -987,15 +985,6 @@ p.statement {
 }
 
 
-@media only screen and (min-width: 415px) {
-
-  .conclusion h2 {
-      left: 33%;
-  }
-
-}
-
-
 @media only screen and (min-width: 525px) {
 
   a {
@@ -1008,10 +997,6 @@ p.statement {
 
   .conclusion {
       padding-top: 7.5rem;
-  }
-
-  .illustration-latte {
-      padding: 0 5rem;
   }
 
 }
@@ -1133,21 +1118,6 @@ p.statement {
       padding: 5rem 1.6rem 10rem 1.6rem;
   }
 
-  .illustration-beans {
-      padding-left: 23%;
-      padding-right: 2rem;
-  }
-
-  .illustration-mug {
-      padding-left: 23%;
-      padding-right: 2rem;
-  }
-
-  .illustration-discover {
-      padding-left: 23%;
-      padding-right: 2rem;
-  }
-
   .company {
       grid-column: 2 / 4;
       grid-row: 9 / 10;
@@ -1248,10 +1218,6 @@ p.statement {
   .user-stories {
       grid-row: 13 / 14;
       padding: 5rem .6rem 7.5rem .6rem;
-  }
-
-  .user-stories h2 {
-      text-align: center;
   }
 
   .user-stories p.quote, .user-stories ul {
@@ -1401,18 +1367,6 @@ p.statement {
 
   .develop {
       padding-bottom: 12rem;
-  }
-
-  .develop h2 {
-      text-align: center;
-  }
-
-  .conclusion h2 {
-      padding-left: 33%;
-  }
-
-  .conclusion p {
-      text-align: left;
   }
 
 }
@@ -1713,15 +1667,10 @@ p.statement {
       align-self: center;
       justify-self: center;
       padding: 7.5rem 1.6rem;
-      text-align: center;
   }
 
   .lesson h2 {
       font-size: 3.6rem;
-  }
-
-  .lesson p {
-      text-align: left;
   }
 
   .packaging1 {
@@ -1897,10 +1846,6 @@ p.statement {
       justify-self: center;
       margin-top: 0;
       padding: 10rem 1.6rem 5rem 1.6rem;
-  }
-
-  .mockups h2 {
-      text-align: center;
   }
 
   .mockup-feedback {
