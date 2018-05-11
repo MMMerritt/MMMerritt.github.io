@@ -319,6 +319,12 @@ p.statement {
     font-weight: 300;
 }
 
+.stories-background {
+    background-color: #F9F9F9;
+    grid-column: 1 / 9;
+    grid-row: 17 / 18;
+}
+
 .user-stories {
     grid-column: 2 / 8;
     grid-row: 17 / 18;
@@ -336,7 +342,6 @@ p.statement {
     grid-column: 2 / 8;
     grid-row: 18 / 19;
     align-self: center;
-    justify-self: center;
     margin-bottom: 1rem;
     padding: 5rem .6rem 0 .6rem;
 }
@@ -372,16 +377,20 @@ p.statement {
     display: none;
 }
 
-.branding-left-1 h3 {
-    padding-top: 5rem;
-}
-
 .branding-left-1 {
     grid-column: 2 / 8;
     grid-row: 22 / 23;
     align-self: center;
     justify-self: center;
     padding: 0 .6rem;
+}
+
+.branding-left-1 h3 {
+    padding: 0;
+}
+
+.branding-left-1 p, .logo-design p, .logo-test p {
+    margin-top: 0;
 }
 
 .coffee-mindmap {
@@ -401,7 +410,7 @@ p.statement {
     padding: 1rem .6rem;
 }
 
-.logo-design h2 {
+.logo-design h3 {
     margin: 1rem 0;
 }
 
@@ -583,7 +592,7 @@ p.statement {
     grid-row: 40 / 41;
     align-self: center;
     justify-self: center;
-    margin: 2rem 0;
+    margin: 2rem 0 7rem 0;
     padding: 1rem 4rem 4rem 4rem;
     text-align: center;
 }
@@ -616,7 +625,7 @@ p.statement {
 }
 
 .packaging1 h2 {
-    margin: 1rem 0;
+    margin: 0;
 }
 
 .packaging2-title {
@@ -633,6 +642,10 @@ p.statement {
     align-self: center;
     justify-self: center;
     padding: 0 1.6rem 2.5rem 1.6rem;
+}
+
+.package-guides h4 {
+    margin-bottom: 2rem;
 }
 
 .package-guides li {
@@ -1076,6 +1089,28 @@ p.statement {
       padding: 2.5rem 5rem 5rem 5rem;
   }
 
+  .bag-sketch {
+      grid-column: 5 / 8;
+      grid-row: 44 / 45;
+      align-self: center;
+      justify-self: center;
+      max-width: 23rem;
+      height: auto;
+      padding: 5rem 0;
+  }
+
+  .bag-illustrations {
+      grid-column: 2 / 5;
+      grid-row: 44 / 45;
+      align-self: center;
+      justify-self: center;
+      padding: 5rem 1.6rem;
+  }
+
+  .bag-illustrations h3 {
+      text-align: left;
+  }
+
 }
 
 
@@ -1215,6 +1250,10 @@ p.statement {
       padding: 3rem 8rem 6rem 8rem;
   }
 
+  .stories-background {
+      grid-row: 13 / 14;
+  }
+
   .user-stories {
       grid-row: 13 / 14;
       padding: 5rem .6rem 7.5rem .6rem;
@@ -1282,11 +1321,13 @@ p.statement {
   }
 
   .final-logo-color {
+      grid-column: 2 / 5;
       grid-row: 28 / 29;
   }
 
   .final-logo-bw {
-      grid-row: 29 / 30;
+      grid-column: 5 / 8;
+      grid-row: 28 / 29;
   }
 
   .logo-red-circle {
@@ -1311,6 +1352,10 @@ p.statement {
       align-self: center;
       justify-self: center;
       padding: 2rem .5rem 7.5rem .5rem;;
+  }
+
+  .column-red {
+      margin-bottom: 9rem;
   }
 
   .packaging1 {
@@ -1421,6 +1466,7 @@ p.statement {
       grid-row: 38 / 41;
       align-self: center;
       justify-self: center;
+      margin-bottom: 9rem;
       padding: 4rem;
       text-align: center;
   }
@@ -1430,6 +1476,7 @@ p.statement {
       grid-row: 38 / 41;
       align-self: center;
       justify-self: center;
+      margin-bottom: 9rem;
       padding: 4rem;
       text-align: center;
   }
@@ -1491,11 +1538,7 @@ p.statement {
       grid-row: 18 / 19;
       align-self: center;
       justify-self: center;
-      padding: 7.5rem 4rem 4rem .6rem;
-  }
-
-  .branding-left-1 h3 {
-      padding-top: 0;
+      padding: 5rem 4rem 4rem .6rem;
   }
 
   .coffee-mindmap {
@@ -1510,10 +1553,10 @@ p.statement {
       grid-row: 19 / 20;
       align-self: center;
       justify-self: center;
-      padding: 6rem 1.6rem;
+      padding: 1.6rem;
   }
 
-  .logo-design h2 {
+  .logo-design h3 {
       text-align: left;
   }
 
@@ -1525,7 +1568,7 @@ p.statement {
       margin-bottom: 5rem;
       max-width: 100%;
       height: auto;
-      padding: 10rem 1.6rem 1.6rem 1.6rem;
+      padding: 1.6rem;
   }
 
   .logo-graphics {
@@ -1639,6 +1682,7 @@ p.statement {
       grid-row: 27 / 28;
       align-self: center;
       justify-self: center;
+      margin-bottom: 10rem;
       padding: 5rem;
       text-align: center;
   }
@@ -1648,6 +1692,7 @@ p.statement {
       grid-row: 27 / 28;
       align-self: center;
       justify-self: center;
+      margin-bottom: 10rem;
       padding: 5rem;
       text-align: center;
   }
@@ -1657,6 +1702,7 @@ p.statement {
       grid-row: 27 / 28;
       align-self: center;
       justify-self: center;
+      margin-bottom: 10rem;
       padding: 5rem;
       text-align: center;
   }
@@ -1683,7 +1729,8 @@ p.statement {
       grid-row: 29 / 30;
       align-self: center;
       justify-self: center;
-      padding: 10rem 1.6rem 0 1.6rem;
+      margin: 0;
+      padding: 7.5rem 1.6rem 0 1.6rem;
   }
 
   .packaging2 {
@@ -2048,11 +2095,7 @@ p.statement {
   }
 
   .branding-left-1 {
-      padding: 15rem 4rem 4rem 1rem;
-  }
-
-  .coffee-mindmap {
-      padding-top: 10rem;
+      padding: 5rem 4rem 4rem 1rem;
   }
 
 }
