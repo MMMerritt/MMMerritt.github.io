@@ -27,3 +27,6 @@ $( "#menu-btn" ).click(function() {
          $("#responsive-menu").toggleClass("open", 200);
          //$("#container").toggleClass("open", 200);
      });
+
+
+//$("#responsive-menu").click(function(e) { e.stopPropagation(); return false; });
