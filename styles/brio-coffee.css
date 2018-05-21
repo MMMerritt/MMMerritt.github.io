@@ -836,12 +836,22 @@ p.statement {
     margin: 1rem 0;
 }
 
+.mockup-versions {
+    grid-column: 2 / 8;
+    grid-row: 59 / 60;
+    align-self: start;
+}
+
+
+.mockup-v1, .mockup-v2, .mockup-v3, .mockup-v4, .mockup-v5 {
+    max-width: 100%;
+    height: auto;
+}
+
 .mockup1 {
     grid-column: 2 / 8;
     grid-row: 59 / 60;
-    align-self: center;
-    justify-self: center;
-    padding: 5rem .6rem;
+    padding: 5rem 10%;
 }
 
 .mockup-feedback {
@@ -867,30 +877,19 @@ p.statement {
 .mockup3 {
     grid-column: 2 / 8;
     grid-row: 63 / 64;
-    align-self: center;
-    justify-self: center;
-    padding: 5rem .6rem;
+    padding: 5rem 10%;
 }
 
 .mockup4 {
     grid-column: 2 / 8;
     grid-row: 64 / 65;
-    align-self: center;
-    justify-self: center;
-    padding: 5rem .6rem;
+    padding: 5rem 10%;
 }
 
 .mockup5 {
     grid-column: 2 / 8;
     grid-row: 65 / 66;
-    align-self: center;
-    justify-self: center;
-    padding: 5rem .6rem 7rem .6rem;
-}
-
-.mockup-v1, .mockup-v2, .mockup-v3, .mockup-v4, .mockup-v5 {
-    max-width: 100%;
-    height: auto;
+    padding: 5rem 10%;
 }
 
 .develop-background {
@@ -1373,45 +1372,35 @@ p.statement {
   .mockup1 {
       grid-column: 2 / 5;
       grid-row: 61 / 62;
-      align-self: start;
-      justify-self: center;
       padding: 5rem .6rem;
   }
 
   .mockup2 {
       grid-column: 2 / 5;
       grid-row: 62 / 63;
-      align-self: start;
-      justify-self: center;
       padding: 5rem .6rem;
   }
 
   .mockup3 {
       grid-column: 5 / 8;
       grid-row: 62 / 63;
-      align-self: center;
-      justify-self: center;
       padding: 5rem .6rem;
   }
 
   .mockup4 {
       grid-column: 2 / 5;
       grid-row: 63 / 64;
-      align-self: start;
-      justify-self: center;
       padding: 5rem .6rem;
   }
 
   .mockup5 {
       grid-column: 5 / 8;
       grid-row: 63 / 64;
-      align-self: start;
-      justify-self: center;
       padding: 5rem .6rem 7.5rem .6rem;
   }
 
   .develop {
-      padding-bottom: 12rem;
+      padding-bottom: 10rem;
   }
 
 }
@@ -1936,6 +1925,41 @@ p.statement {
       display: none;
   }
 
+  /*.mockup1 {
+      display: inline-block;
+      grid-column: 2 / 8;
+      grid-row: 43 / 44;
+      padding: 5rem .6rem;
+  }
+
+  .mockup2 {
+      display: inline-block;
+      grid-column: 2 / 8;
+      grid-row: 43 / 44;
+      padding: 5rem .6rem;
+  }
+
+  .mockup3 {
+      display: inline-block;
+      grid-column: 2 / 8;
+      grid-row: 43 / 44;
+      padding: 5rem .6rem;
+  }
+
+  .mockup4 {
+      display: inline-block;
+      grid-column: 2 / 8;
+      grid-row: 43 / 44;
+      padding: 5rem .6rem;
+  }
+
+  .mockup5 {
+      display: inline-block;
+      grid-column: 2 / 8;
+      grid-row: 43 / 44;
+      padding: 5rem .6rem 7rem .6rem;
+  }*/
+
   .mockup-title1 {
       display: block;
       grid-column: 2 / 4;
@@ -1978,7 +2002,7 @@ p.statement {
       align-self: center;
       justify-self: center;
       margin-top: 3rem;
-      padding: 5rem 1.6rem 12.5rem 1.6rem;
+      padding: 5rem 1.6rem 10rem 1.6rem;
       text-align: center;
   }
 
@@ -1996,7 +2020,7 @@ p.statement {
       grid-row: 45 / 46;
       align-self: center;
       justify-self: center;
-      padding: 10rem 1.6rem 8rem 1.6rem;
+      padding: 7.5rem 1.6rem;
   }
 
   .previous {
