@@ -99,6 +99,10 @@ i {
      z-index: 100;
  }
 
+ .responsive-menu.close {
+     display: none;
+ }
+
  .responsive-menu ul {
      list-style: none;
      padding: 0;
