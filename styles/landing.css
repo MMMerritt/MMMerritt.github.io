@@ -55,10 +55,6 @@ p {
 .hero-content {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    /*background-image: url("../images/golden-ratio-vert.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;*/
     color: #FFFFFF;
     padding: 30% 1rem 20% 1rem;
 }
@@ -136,16 +132,6 @@ a.brio-specs h2, a.noms-specs h2 {
     text-align: center;
 }
 
-@media only screen and (min-width: 400px) {
-
-  /*.hero-content {
-      background-image: url("../images/golden-ratio-vert.png");
-      background-position: left top;
-      background-size: 100% auto;
-  }*/
-
-}
-
 
 @media only screen and (min-width: 600px) {
 
@@ -156,6 +142,7 @@ a.brio-specs h2, a.noms-specs h2 {
   }
 
   .hero-background {
+      background-size: 20%;
       grid-column: 1 / 5;
   }
 
@@ -215,6 +202,10 @@ a.brio-specs h2, a.noms-specs h2 {
 
 
 @media only screen and (min-width: 800px) {
+
+  .hero-background {
+      background-size: 15%;
+  }
 
   .intro h1 {
       font-size: 6.4rem;
@@ -331,6 +322,10 @@ a.brio-specs h2, a.noms-specs h2 {
   .container {
       grid-template-columns: 10rem 1fr 1fr 10rem;
       grid-template-rows: auto 35rem;
+  }
+
+  .hero-background {
+      background-size: 12%;
   }
 
   .hero-content {

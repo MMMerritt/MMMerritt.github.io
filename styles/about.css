@@ -57,6 +57,7 @@ a {
 .container {
     display: grid;
     grid-template-columns: 1rem 1fr 1fr 1rem;
+    grid-template-rows: auto;
     position: relative;
     width: 100%;
 }
@@ -65,7 +66,6 @@ a {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     justify-self: center;
-
     padding: 1rem .6rem;
 }
 
@@ -82,8 +82,62 @@ a {
     padding: 1rem .6rem;
 }
 
+.collapse-container {
+    background: rgba(255, 255, 255, 0.6);
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    max-width: 75rem;
+}
+
+.collapsible {
+    background-color: #FFF;
+    border: none;
+    color: #66D3C8;
+    cursor: pointer;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    max-width: 75rem;
+    text-align: left;
+    text-decoration: none;
+}
+
+.chevron-down {
+    padding-left: 1rem;
+}
+
+.chevron-bold {
+    display: none;
+}
+
+.fa-angle-down {
+    color: #66D3C8;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.collapsible:hover {
+    color: #36706A;
+    font-weight: 600;
+}
+
+.collapsible:hover i {
+    color: #36706A;
+    font-weight: 600;
+}
+
+.content {
+    max-width: 75rem;
+    display: none;
+}
+
 p.last {
     padding-bottom: 2rem;
+}
+
+footer {
+    grid-row: 5 / 6;
+    padding-top: 5rem;
 }
 
 
@@ -94,7 +148,7 @@ p.last {
   }
 
   p, a, li {
-      font-size: 2rem;
+      font-size: 1.8rem;
   }
 
   .container {
@@ -108,6 +162,10 @@ p.last {
 
   .container {
       grid-template-columns: 5rem 1fr 1fr 5rem;
+  }
+
+  footer {
+      padding-top: 1rem;
   }
 
 }
@@ -125,10 +183,19 @@ p.last {
       padding-top: 2rem;
   }
 
+  .collapse-container {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+  }
+
+  footer {
+      grid-row: 3 / 4;
+  }
+
   .portrait {
       grid-column: 3 / 4;
       justify-self: right;
-      padding: 10rem 7rem 1rem 1rem;
+      padding: 8rem 7rem 1rem 1rem;
       position: fixed;
       right: 0;
   }
