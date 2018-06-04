@@ -324,10 +324,6 @@ a.brio-specs h2, a.noms-specs h2 {
       grid-template-rows: auto 35rem;
   }
 
-  .hero-background {
-      background-size: 12%;
-  }
-
   .hero-content {
       justify-self: center;
       max-width: 88.5rem;
