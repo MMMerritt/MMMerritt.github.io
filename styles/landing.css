@@ -5,10 +5,10 @@ html {
 
 h1 {
     color: #FFFFFF;
-    font-family: 'Open Sans Condensed', 'Arial', 'Helvetica', sans-serif;
-    font-size: 5.6rem;
-    font-weight: 700;
-    margin: .5rem 0;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    font-size: 6.4rem;
+    font-weight: 600;
+    margin: .5rem 0 1.5rem 0;
 }
 
 h2 {
@@ -21,7 +21,7 @@ h3 {
     font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
     font-size: 2.4rem;
     font-weight: 400;
-    margin: 1rem 0;
+    margin: 0;
 }
 
 p {
@@ -45,8 +45,8 @@ p {
 }
 
 .hero-background {
-    background-color: #9857AD;
-    background-image: url("../images/golden-ratio-vert.png");
+    background-color: #F0F0F0;
+    /*background-image: url("../images/golden-ratio-vert.png");*/
     background-size: 25%;
     grid-column: 1 / 4;
     grid-row: 1 / 2;
@@ -55,25 +55,187 @@ p {
 .hero-content {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    color: #FFFFFF;
-    padding: 30% 1rem 20% 1rem;
+    color: #9857AD;
+    padding: 25% 1rem 20% 1rem;
 }
 
 .intro h1 {
-    line-height: 5.5rem;
-    margin: 0;
-    max-width: 60%;
+    line-height: 6.4rem;
+    max-width: 60rem;
 }
 
-.intro h3 {
-    margin: .5rem 0;
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:0;}
+    80% {opacity:.7;}
+    90% {opacity:.85;}
+    100% {opacity:1;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; opacity:.2; }
+    50% { margin-left:0px; opacity:.5; }
+    100% { margin-left:0px; }
+}
+
+/*.intro h3.greeting {
+    font-weight: 300;
     max-width: 90%;
+    animation-name: slidein;
+    animation-duration: 3s;
+}*/
+
+.intro h3.my-title {
+    font-weight: 400;
+    max-width: 90%;
+    animation-name: slidein;
+    animation-duration: 2s;
 }
 
 .intro p {
     margin-top: 5rem;
     max-width: 90%;
+    animation-name: showup;
+    animation-duration: 3s;
 }
+
+/*Animation entry test - Does not work with rainbow effect in chrome!
+
+body{
+    word-wrap:break-word;
+}
+
+ul
+{
+    list-style: none;
+}
+
+.animate {
+    color: #FFF;
+    font-size: 7.2rem;
+    font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+    line-height: 8rem;
+    max-width: 30rem;
+}
+
+.animate span {
+    display: inline-block;
+    line-height: 7.2rem;
+}
+
+.animate span:nth-of-type(2) {
+    animation-delay: .1s;
+}
+.animate span:nth-of-type(3) {
+    animation-delay: .2s;
+}
+.animate span:nth-of-type(4) {
+    animation-delay: .3s;
+}
+.animate span:nth-of-type(5) {
+    animation-delay: .4s;
+}
+.animate span:nth-of-type(6) {
+    animation-delay: .5s;
+}
+.animate span:nth-of-type(7) {
+    animation-delay: .6s;
+}
+.animate span:nth-of-type(8) {
+    animation-delay: .7s;
+}
+.animate span:nth-of-type(9) {
+    animation-delay: .8s;
+}
+.animate span:nth-of-type(10) {
+    animation-delay: .9s;
+}
+.animate span:nth-of-type(11) {
+    animation-delay: 1s;
+}
+.animate span:nth-of-type(12) {
+    animation-delay: 1.1s;
+}
+.animate span:nth-of-type(13) {
+    animation-delay: 1.2s;
+}
+.animate span:nth-of-type(14) {
+    animation-delay: 1.3s;
+}
+.animate span:nth-of-type(15) {
+    animation-delay: 1.4s;
+}
+.animate span:nth-of-type(16) {
+    animation-delay: 1.5s;
+}
+.animate span:nth-of-type(17) {
+    animation-delay: 1.6s;
+}
+
+/* Animation Three
+
+.three span {
+    color: #FFF;
+    opacity: 0;
+    transform: translate(-300px, 0) scale(0);
+    animation: sideSlide .5s forwards;
+}
+
+@keyframes sideSlide {
+    60% {
+        transform: translate(20px, 0) scale(1);
+        color: #FFF;
+    }
+
+    80% {
+        transform: translate(20px, 0) scale(1);
+        color: #FFF;
+    }
+
+    99% {
+        transform: translate(0) scale(1.2);
+        color: #00f0ff;
+    }
+
+    100% {
+        transform: translate(0) scale(1);
+        opacity: 1;
+        color: #FFF;
+    }
+}
+
+/*End of entry animation*/
+
+/*Animation experiment shine*/
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@-webkit-keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.linear-wipe {
+  /*background: linear-gradient(to right, #FFF 20%, #DD97F4 35%, #48C4F1 50%, #FAE940 65%, #FFF 80%);*/
+  background: linear-gradient(to right, #EF9537 5%, #B06DC5 15%, #48C4F1 50%, #FAE940 80%, #EF9537 98%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+  -webkit-animation: shine 4s linear infinite;
+}
+
+/*End of animation*/
+
 
 .project-1 {
     display: block;
@@ -149,7 +311,7 @@ a.brio-specs h2, a.noms-specs h2 {
   .hero-content {
       grid-column: 2 / 4;
       grid-row: 1 / 2;
-      padding: 10%;
+      padding: 20% 1rem;
   }
 
   .project-1 {
@@ -198,6 +360,11 @@ a.brio-specs h2, a.noms-specs h2 {
       max-width: 100%;
   }
 
+  .animate {
+      max-width: 70rem;
+      max-height: 9rem;
+  }
+
 }
 
 
@@ -208,16 +375,15 @@ a.brio-specs h2, a.noms-specs h2 {
   }
 
   .intro h1 {
-      font-size: 6.4rem;
+      font-size: 7.2rem;
   }
 
   .intro h3 {
-      font-size: 3.6rem;
-      margin: 1.5rem 0;
+      font-size: 2.8rem;
   }
 
   .intro p {
-      font-size: 2.4rem;
+      font-size: 1.8rem;
       max-width: 60%;
   }
 
@@ -229,7 +395,7 @@ a.brio-specs h2, a.noms-specs h2 {
   .hero-content {
       grid-column: 2 / 4;
       grid-row: 1 / 2;
-      padding: 10% 10%;
+      padding: 10% 5%;
   }
 
   .intro {
@@ -327,7 +493,7 @@ a.brio-specs h2, a.noms-specs h2 {
   .hero-content {
       justify-self: center;
       max-width: 88.5rem;
-      padding: 10% 3% 10% 7%;
+      padding: 10% 3% 15% 7%;
   }
 
   .noms-specs {
